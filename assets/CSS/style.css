@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cutive+Mono&family=Grape+Nuts&family=Montserrat+Alternates&family=Oswald&family=Rubik+Microbe&family=Rubik+Moonrocks&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+.fondo{
+	position: fixed;
+	top: 0px;
+	bottom: -50%;
+	right: -50%;
+	left: -50%;
+
+
+	z-index: -1;
+	background-image: linear-gradient(120deg, #24252A 65%, rgba(0, 136, 169, .5) 35%);
+}
+
+
+header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	z-index: 10;
+}
+
+
+header li, header a, header button {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+
+
+header nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	padding-left: 10%;
+	padding-right: 10%;
+
+	animation: fadeTop,subR;
+	animation-duration: 1.5s;
+
+	backdrop-filter: blur(2px);
+
+	background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .4));
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0px 3px;
+
+	animation-fill-mode: forwards;
+
+	z-index: 5;
+}
+
+
+nav .navLinksMovile{
+	display: none;
+}
+
+header nav {
+	list-style: none;
+}
+
+
+header nav li{
+	display: inline-block;
+	margin-right: 32px;
+}
+
+header nav li a {
+	transition: all 0.3s ease 0s;
+}
+
+header nav li a:hover {
+	color: rgba(0, 136, 169, 0.8);
+}
+
+header nav a button{
+	cursor: pointer;
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border:  none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+}
+
+header nav a button:hover{
+	background-color: rgba(0, 136, 169, 0.8);
+}
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+#inicio{
+	z-index: 2;
+
+	margin: 0px;
+	padding: 0px;
+
+	height: 700px;
+}
+
+
+#inicio .contenedor{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+	margin-top: 100px;
+
+
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-family: 'Rubik Moonrocks', cursive;
+	font-size: 152px;
+}
+
+
+#inicio .contenedor .animacion{
+	align-items: center;
+	justify-content: center;
+}
+
+
+.tierra{
+	max-width: 400px;
+	margin: 150px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+	animation: circulo;
+	animation-duration: 10s;
+	animation-direction: reverse;
+}
+
+
+.satelite{
+	background-color: rgba(0, 136, 169, 1);
+
+	width: 80px;
+	height: 80px;
+
+	border-radius: 50px;
+	position: relative;
+
+	animation: acercado;
+	animation-duration: 12s;
+	animation-fill-mode: forwards;
+
+}
+
+#inicio .contenedor .palabra1{
+	animation: fadeLeft;
+	animation-duration: 7s;
+}
+
+#inicio .contenedor .palabra2{
+	animation: fadeLeft;
+	animation-duration: 5s;
+}
+
+#inicio .contenedor .palabra3{
+	animation: fadeLeft;
+	animation-duration: 4s;
+}
+
+body .flecha{
+	position: fixed;
+
+	top: 0px;
+	left: 0px;
+
+	height: 100%;
+	width: 100%;
+}
+
+
+body .flecha .flechaImg{
+	position: absolute;
+	
+	right: 30px;
+	bottom:  0px;
+
+
+
+
+	filter: brightness(.9);
+
+	
+	animation: iluminar;
+	animation-delay: 8s;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate ;
+	animation-timing-function: ease-in-out;
+	
+	cursor: pointer;
+}
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-- Objetivo  --------------------------------------------------------------------------------------------*/
+#objetivo{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	
+	top: 50px;
+	left: 50px;
+
+	width: 90%;
+	height: 100%;
+
+	transform: translateX(200%);
+
+	display: flex;
+	align-items: center;
+}
+
+
+#objetivo .contenedor{
+	display: flex;
+	align-items: stretch;
+
+	height: 300px;
+	width: 100%;
+}
+
+#objetivo .contenedor .papper{
+	min-height: 300px;
+	min-width: 300px;
+	max-height: 300px;;
+	max-width: 300px;;
+	
+	border-radius: .25em;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+
+.pp1{
+	background-color: #2874A6  ;
+	font-family: 'Grape Nuts', cursive;
+	font-weight: 600;
+	font-size: 55px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 5;
+}
+
+.pp2{
+	background-color: #5DADE2  ;
+	font-family: 'Cutive Mono', monospace;
+	font-weight: 200;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 4;
+
+	transform: translateY(-300px);
+}
+
+.pp3{
+	background-color: #A3E4D7;
+	color: black;
+	font-family: 'Beau Rivage', cursive;
+	font-weight: 300;
+	font-size: 36px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 3;
+
+	transform: translate(300px, -300px);
+}
+
+.pp4{
+	background-color: #D0D3D4;
+	font-family: 'Rubik Moonrocks', cursive;
+	font-weight: 100;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 2;
+
+	transform: translate(600px, -300px);
+}
+
+.pp5{
+	background-color: #797D7F;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 1;
+
+	transform: translateX(600px);
+}
+
+#objetivo .mFlechaDv{
+	position: fixed;
+	right: 0px;
+}
+
+#objetivo .mFlechaDv .mFlecha{
+	position: fixed;
+	width: 250px;
+
+
+	animation: parpadeo;
+	animation-duration: .7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+
+	cursor: pointer;
+}
+
+#objetivo .mFlechaDv .flechaImg1{
+	transform: translateY(-200%) rotate(90deg);
+	cursor: pointer;
+}
+
+
+.p2{
+	animation: escribir;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+
+	width: 0%;
+}
+
+
+
+
+/*-- Objetivo  --------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-- Habilidades  -----------------------------------------------------------------------------------------*/
+
+#habilidades{
+	position: fixed;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	width: 90%;
+	height: 87%;
+
+	margin-top: 5%;
+	margin-left: 5%;
+
+
+	top: 0px;
+	left: 0px;
+	
+
+	transform: translate(200%, 200%);
+}
+
+
+
+
+#habilidades .contenedor{
+	position: absolute;
+	float: left;
+
+	align-items: center;
+
+	height: 100%;
+	width: 100%;
+
+
+	
+}
+
+#habilidades .contenedor .proyecto{
+	position: relative;
+	float: right;
+
+	height: 100%;
+	width: 35%;
+
+	background-color: rgba(255, 255, 255, .3);
+	backdrop-filter: blur(2px);
+}
+
+#habilidades .contenedor .lenguajes{
+	position: relative;
+
+	float: right;
+
+	height: 100%;
+	width: 25%;
+
+	background-color: rgba(255, 255, 255, .2);
+	backdrop-filter: blur(4px);
+}
+
+#habilidades .contenedor .tecnologias{
+	position: relative;
+
+	float: right;
+	height: 100%;
+	width: 20%;
+
+	background-color: rgba(255, 255, 255, .1);
+	backdrop-filter: blur(5px);
+}
+
+#habilidades .contenedor .flecha{
+	position: relative;
+
+	float: left;
+	width: 20%;
+
+
+
+}
+
+#habilidades .contenedor .flecha .flechaImg2{
+	position: relative;
+	transform: rotate(180deg);
+	top: 45%;
+
+	animation: iluminar3;
+	animation-delay: 0s;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate ;
+	animation-timing-function: ease-in-out;
+}
+
+
+
+
+
+/*-- Habilidades  -----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*-- Animaciones -------------------------------------------------------------------------------------------*/
+@keyframes fadeTop{
+	0%{
+		transform: translateY(-100%);
+		opacity: .3;
+	}
+	100%{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes subR{
+	100%{
+		animation-delay: 5s;
+		background-size: 100% 2px;
+	}
+}
+
+@keyframes acercado{
+	100%{
+		transform: translate(-180px, -90px);
+	}
+}
+
+
+
+@keyframes circulo{
+	0%{
+		transform:rotate(0deg);
+	}
+	20%{
+		transform:rotate(120deg);
+	}
+	100%{
+		transform:rotate(240deg);
+	}
+}
+
+@keyframes fadeLeft{
+	0%{
+		transform: translateX(-150%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes iluminar{
+	0%{
+		filter: brightness(2);
+		transform: translateX(-30px);
+	}
+	100%{
+		filter: brightness(2);
+		transform: translateX(0px);
+	}
+}
+
+@keyframes iluminar2{
+	0%{
+		filter: brightness(2);
+		transform: translateY(0px) rotate(90deg);
+	}
+	100%{
+		filter: brightness(2);
+		transform: translateY(+30px) rotate(90deg);
+	}
+}
+
+
+@keyframes iluminar3{
+	0%{
+		filter: brightness(2);
+		transform: translateX(-30px) rotate(180deg);
+	}
+	100%{
+		filter: brightness(2);
+		transform: translateX(0px) rotate(180deg);
+	}
+
+}
+
+
+@keyframes parpadeo{
+	0%{
+		filter: brightness(.5);
+	}
+	100%{
+		filter: brightness(1.75);
+	}
+}
+
+
+@keyframes transicion{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.2;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+@keyframes escribir{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+/*-- Animaciones -------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- Responsive --------------------------------------------------------------------------------------------*/
+@media (max-width: 1243px){
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+	header nav{
+		flex-direction: column-reverse;
+		animation: transicion;
+		animation-duration: 1.5s;
+
+		background-size: 0px 2px;
+
+		padding-bottom: 2px;
+	}
+
+	header nav a button{
+		margin: 15px;
+		margin-bottom: 25px;
+	}
+
+
+	header nav ul{
+		display: table-column;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	header nav ul li{
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 30px;
+		margin-top: 7px;
+
+		font-size: 23px;
+
+		background-color: rgba(200, 200, 200, .9);
+
+		border-width: 2px;
+		border-style: solid;
+		border-color: white;
+
+		border-radius: 50px;
+
+		display: none;
+
+
+	}
+
+	nav ul li a{
+		font-size: 28px;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.0);
+	}
+
+	
+	header nav .navLinksMovile{
+		display: block;
+	}
+
+	header nav .btnMenu{
+		width: 70px;
+		transition: all 0.5s ease 0s;
+		transform: translateY(0px);
+
+		cursor: pointer;
+	}
+
+	header nav .btnMenu:hover{
+		transform: translateY(5px);
+	}
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+	#inicio .contenedor{
+		flex-direction: column;
+		margin-top: 200px;
+		text-align: center;
+
+		font-size: 102px;
+	}
+
+	.satelite{
+		display: none;
+	}
+
+	body .flecha .flechaImg{
+		width: 200px;
+	}
+
+
+	.flecha1{
+		width: 220px;
+	}
+
+	.tierra{
+		margin: 50px;
+	}
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-- Objetivo  --------------------------------------------------------------------------------------------*/
+	#objetivo .contenedor2{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#objetivo .contenedor3{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.pp1{
+		transform: translateY(0px);
+	}
+
+	.pp2{
+		transform: translateY(-600px);
+	}
+
+	.pp3{
+		transform: translateY(-300px);
+	}
+
+	.pp4{
+		transform: translateY(0px);
+	}
+
+	.pp5{
+		transform: translateY(600px);
+	}
+	
+	.mFlecha{
+		display: none;
+	}
+
+/*-- Objetivo  --------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
