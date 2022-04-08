@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cutive+Mono&family=Grape+Nuts&family=Montserrat+Alternates&family=Oswald&family=Rubik+Microbe&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cutive+Mono&family=Grape+Nuts&family=Montserrat+Alternates&family=Oswald&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik:wght@900&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -133,7 +133,7 @@ header nav a button:hover{
 	margin-top: 100px;
 
 
-	font-family: 'Montserrat Alternates', sans-serif;
+	/*font-family: 'Rubik', sans-serif;*/
 	font-family: 'Rubik Moonrocks', cursive;
 	font-size: 152px;
 }
@@ -385,7 +385,7 @@ body .flecha .flechaImg{
 	right: 0px;
 }
 
-#objetivo .mFlechaDv .mFlecha{
+#objetivo .mFlechaDv{
 	position: fixed;
 	width: 250px;
 
@@ -403,19 +403,6 @@ body .flecha .flechaImg{
 	transform: translateY(-200%) rotate(90deg);
 	cursor: pointer;
 }
-
-
-.p2{
-	animation: escribir;
-	animation-duration: 10s;
-	animation-fill-mode: forwards;
-
-	width: 0%;
-}
-
-
-
-
 /*-- Objetivo  --------------------------------------------------------------------------------------------*/
 
 
@@ -444,9 +431,6 @@ body .flecha .flechaImg{
 	transform: translate(200%, 200%);
 }
 
-
-
-
 #habilidades .contenedor{
 	position: absolute;
 	float: left;
@@ -456,35 +440,80 @@ body .flecha .flechaImg{
 	height: 100%;
 	width: 100%;
 
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
 
-	
+	text-shadow: 1px 1px 2px black;
+	text-align: center;
+	color: white;
 }
 
 #habilidades .contenedor .proyecto{
 	position: relative;
 	float: right;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+
+
 	height: 100%;
 	width: 35%;
+
+	margin: 0px 15px;
+	border-radius: .25em;
 
 	background-color: rgba(255, 255, 255, .3);
 	backdrop-filter: blur(2px);
 }
 
+#habilidades .contenedor .proyecto .flechaDl{
+	margin: 20px;
+}
+
+#habilidades .contenedor .proyecto .projectImg{
+	margin-top: 50px;
+	width: 85%;
+
+	border-radius: .25em;
+}
+
 #habilidades .contenedor .lenguajes{
 	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	margin: 0px 15px;
+	border-radius: .25em;
 
 	float: right;
 
 	height: 100%;
-	width: 25%;
+	width: 20%;
 
 	background-color: rgba(255, 255, 255, .2);
 	backdrop-filter: blur(4px);
 }
 
+#habilidades .contenedor .lenguajes .lenguajesLogo,
+#habilidades .contenedor .tecnologias .tecnologiasLogo{
+	width: 80px;
+	display: block;
+
+	margin: 30px;
+}
+
 #habilidades .contenedor .tecnologias{
 	position: relative;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	margin: 0px 15px;
+	border-radius: .25em;
 
 	float: right;
 	height: 100%;
@@ -495,13 +524,10 @@ body .flecha .flechaImg{
 }
 
 #habilidades .contenedor .flecha{
-	position: relative;
+	position: fixed;
 
 	float: left;
 	width: 20%;
-
-
-
 }
 
 #habilidades .contenedor .flecha .flechaImg2{
@@ -509,6 +535,7 @@ body .flecha .flechaImg{
 	transform: rotate(180deg);
 	top: 45%;
 
+	z-index: 5;
 
 	animation: iluminar3;
 	animation-delay: 0s;
@@ -521,6 +548,14 @@ body .flecha .flechaImg{
 }
 /*-- Habilidades  -----------------------------------------------------------------------------------------*/
 
+
+
+
+
+
+
+
+/*-- Contacto  --------------------------------------------------------------------------------------------*/
 #contacto{
 	position: fixed;
 	display: flex;
@@ -550,7 +585,6 @@ body .flecha .flechaImg{
 	text-decoration: none;
 }
 
-
 .container {
     width: 100%;
     height: 100%;
@@ -560,7 +594,6 @@ body .flecha .flechaImg{
     list-style: none;
     padding: 0;
 }
-
 
 .contact-wrapper {
 	border-radius: .25em;
@@ -631,7 +664,6 @@ body .flecha .flechaImg{
     cursor: pointer;
 }
 
-/* CONTACT INFO */
 .contact-info {
     backdrop-filter: blur(5px);
     display: flex;
@@ -647,50 +679,13 @@ body .flecha .flechaImg{
 }
 
 .logo{
-	max-width: 60px;
-	display: block;
-	margin: 50% 0;
+	width: 50px;
 }
 
-
-@media(min-width: 700px) {
- 
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .contact-wrapper > * {
-        padding: 2em;
-    }
-
+.logo:hover{
+	width: 55px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*-- Contacto  --------------------------------------------------------------------------------------------*/
 
 
 
@@ -725,8 +720,6 @@ body .flecha .flechaImg{
 		transform: translate(-180px, -90px);
 	}
 }
-
-
 
 @keyframes circulo{
 	0%{
@@ -771,7 +764,6 @@ body .flecha .flechaImg{
 	}
 }
 
-
 @keyframes iluminar3{
 	0%{
 		filter: brightness(2);
@@ -781,9 +773,7 @@ body .flecha .flechaImg{
 		filter: brightness(2);
 		transform: translateX(0px) rotate(180deg);
 	}
-
 }
-
 
 @keyframes parpadeo{
 	0%{
@@ -793,7 +783,6 @@ body .flecha .flechaImg{
 		filter: brightness(1.75);
 	}
 }
-
 
 @keyframes transicion{
 	0%{
@@ -806,7 +795,6 @@ body .flecha .flechaImg{
 		opacity: 1;
 	}
 }
-
 
 @keyframes escribir{
 	0%{
@@ -852,14 +840,17 @@ body .flecha .flechaImg{
 
 
 
+@media(min-width: 700px) {
+ 
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
 
-
-
-
-
-
-
-
+}
 
 /*-- Responsive --------------------------------------------------------------------------------------------*/
 @media (max-width: 1243px){
@@ -1001,28 +992,6 @@ body .flecha .flechaImg{
 	.pp5{
 		transform: translateY(600px);
 	}
-	
-	.mFlecha{
-		display: none;
-	}
-
-/*-- Objetivo  --------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

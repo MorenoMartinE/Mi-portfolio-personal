@@ -82,8 +82,6 @@ const flechaImg2 = document.querySelector('.flechaImg2');
 
 
 
-
-
 function irContacto(){
 
 	mvInicio('translateY(-200%)');
@@ -114,6 +112,8 @@ flechaImg1Btn.addEventListener("click", e => {
 	irHabilidades();
 })
 
+
+
 //-------------------------------------------------------------------------------------------------------
 
 function mvFondo(str){
@@ -130,7 +130,6 @@ function mvObjetivo(str){
 
 	objetivo.style.transform = (str);
 	objetivo.style.transition = ("transform 2s");
-
 }
 
 function mvInicio(str){
@@ -161,7 +160,6 @@ function mvContacto(str){
 	contacto.style.transition = ('transform 2s')
 
 }
-
 
 
 function escribir(str, cls){
@@ -215,13 +213,12 @@ function escribir(str, cls){
 
 //---------------------------------------------------------------------------------------------------------
 
-const trBtn = document.querySelector('.mFlecha');
+
 var contadorTr = 0;
 
 function armadoObjetivo(){
 
 	let arrPp = document.getElementsByClassName('papper');
-	let flecha = document.getElementsByClassName('mFlecha');
 	let flecha2 = document.getElementsByClassName('flechaImg1');
 
 
@@ -231,18 +228,13 @@ function armadoObjetivo(){
 
 
 	switch(contadorTr){
-		case 0:
-			flecha[0].style.transform = ('rotate(-360deg)');
-			flecha[0].style.transition = ('transform 2s');
+		case 0:		
 
 			escribir('Trabajo como ↓' , 'p1');
 
 			return true;
 			break;
 		case 1:
-			flecha[0].style.transition = ('opacity .2s')
-			flecha[0].style.opacity = ('.0')
-			flecha[0].style.cursor = ('default')
 
 			arrPp[5].style.transform = ("translate(0px, 0px)");
 			arrPp[5].style.transition = ("transform 2s")
@@ -296,7 +288,7 @@ function armadoObjetivo(){
 
 let anm2 = false;
 
-trBtn.addEventListener("click", e => {
+flecha.addEventListener("click", e => {
 	armadoObjetivo();
 	anm2 = true;
 })
