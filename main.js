@@ -137,9 +137,12 @@ function escribir(str, cls){
 			clearInterval(injStr);
 		}
 
-		intervalo = Math.random() * (170 - 120) + 120;
+		intervalo = Math.random() * (170 - 150) + 150;
 
 	}, intervalo);
+
+
+	return 1;
 }
 
 
@@ -187,76 +190,87 @@ function armadoObjetivo(){
 	let flecha2 = document.getElementsByClassName('flechaImg1');
 
 
+
+
+	console.log(1);
+
+
 	switch(contadorTr){
 		case 0:
-			escribir('Trabajo como ↓' , 'p1');
-
-
-			contadorTr++;
 			flecha[0].style.transform = ('rotate(-360deg)');
 			flecha[0].style.transition = ('transform 2s');
+
+			escribir('Trabajo como ↓' , 'p1');
+
+			return true;
 			break;
 		case 1:
-			arrPp[5].style.transform = ("translate(0px, 0px)");
-			arrPp[5].style.transition = ("transform 2s")
-			arrPp[4].style.transform = ("translate(300px, 0px)");
-			arrPp[4].style.transition = ("transform 2s")
-			arrPp[3].style.transform = ("translate(600px, 0px)");
-			arrPp[3].style.transition = ("transform 2s")
-			arrPp[0].style.transform = ("translate(600px, 300px)");
-			arrPp[0].style.transition = ("transform 2s")
-			contadorTr++;
-				
-			escribir('Desarrollador web frontend ←' , 'p2');
-			flecha[0].style.transform = ('rotate(-720deg)');
-			break;
-		case 2:
-			arrPp[4].style.transform = ("translate(0px, 0px)");
-			arrPp[4].style.transition = ("transform 2s")
-			arrPp[3].style.transform = ("translate(300px, 0px)");
-			arrPp[3].style.transition = ("transform 2s")
-			arrPp[0].style.transform = ("translate(300px, 300px)");
-			arrPp[0].style.transition = ("transform 2s")
-			contadorTr++;
-
-			escribir('Y actualmente estoy en busqueda, de mi proximo reto profesional ←' , 'p3');
-			flecha[0].style.transform = ('rotate(-1080deg)');
-			break;
-		case 3:
-			arrPp[3].style.transform = ("translate(0px, 0px)");
-			arrPp[3].style.transition = ("transform 2s")
-			arrPp[0].style.transform = ("translate(0px, 300px)");
-			arrPp[0].style.transition = ("transform 2s")
-			contadorTr++;
-
-			
-			escribir('Espero que este pequeño proyecto sea suficiente ↑' , 'p4');
-			flecha[0].style.transform = ('rotate(-1440deg)');
-			break;
-		case 4:
-			arrPp[0].style.transform = ("translate(0px, 0px)");
-			arrPp[0].style.transition = ("transform 2s");
-			contadorTr++;
-
 			flecha[0].style.transition = ('opacity .2s')
 			flecha[0].style.opacity = ('.0')
 			flecha[0].style.cursor = ('default')
 
+			arrPp[5].style.transform = ("translate(0px, 0px)");
+			arrPp[5].style.transition = ("transform 2s")
+			
+			escribir('Desarrollador web frontend ←' , 'p2');
 
+			return true;
+			break;
+		case 2:
+			arrPp[4].style.visibility = ('visible');
+			arrPp[4].style.transform = ("translate(0px, 0px)");
+			arrPp[4].style.transition = ("transform 2s")
+
+			escribir('Y actualmente estoy en busqueda ←' , 'p3');
+
+			return true;
+			break;
+		case 3:
+			arrPp[3].style.visibility = ('visible')
+			arrPp[3].style.transform = ("translate(0px, 0px)");
+			arrPp[3].style.transition = ("transform 2s")
+
+			escribir('De mi proximo reto profesional↑' , 'p4');
+			return true;
+			break;
+		case 4:
+			arrPp[0].style.visibility = ('visible');
+			arrPp[0].style.transform = ("rotateY(0deg)");
+			arrPp[0].style.transition = ("transform 2s");
+			
 			flecha2[0].style.display = ('block');
 			flecha2[0].style.transform = ('translateY(0%) rotate(90deg)');
 			flecha2[0].style.transition = ('transform 2s');
 			flecha2[0].style.animation = ('iluminar2 1s ease-in-out 2s infinite alternate');
 			
-			escribir('→ Para despertar tu interes ←' , 'p5');
+			escribir('Espero que este pequeño proyecto →' , 'p5');
+			return true;
 			break;
-		default:			
-			break;
-			
+		case 5:
+			arrPp[1].style.visibility = ('visible')
+			arrPp[1].style.transform = ("translate(0px, 0px)");
+			arrPp[1].style.transition = ("transform 2s")
 
+			escribir('Sea suficiente → Para despertar tu interes ←' , 'p6');
+			return true;
+		default:
+			return false;			
+			break;
 	}
 }
 
+let anm2 = false;
+
 trBtn.addEventListener("click", e => {
 	armadoObjetivo();
+	anm2 = true;
 })
+
+setInterval(function(){
+		if(anm2){
+			contadorTr++;
+			anm2 = armadoObjetivo();
+		}
+	}, 4000);
+
+

@@ -297,7 +297,7 @@ body .flecha .flechaImg{
 
 	z-index: 4;
 
-	transform: translateY(-300px);
+	transform: translateY(-300px) rotate(90deg);
 }
 
 .pp3{
@@ -315,7 +315,9 @@ body .flecha .flechaImg{
 
 	z-index: 3;
 
-	transform: translate(300px, -300px);
+	transform: translate(300px, 0px) rotateY(180deg);
+
+	visibility: hidden;
 }
 
 .pp4{
@@ -332,7 +334,9 @@ body .flecha .flechaImg{
 
 	z-index: 2;
 
-	transform: translate(600px, -300px);
+	transform: translate(300px, 0px);
+
+	visibility: hidden;
 }
 
 .pp5{
@@ -349,8 +353,32 @@ body .flecha .flechaImg{
 
 	z-index: 1;
 
-	transform: translateX(600px);
+	transform: translateY(300px) rotate(90deg);
+
+	visibility: hidden;
 }
+
+.pp6{
+	background-color: #A1B983;
+
+
+	font-weight: 100;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	transform: translateX(-300px) rotate(-90deg);
+
+	z-index: 0;
+
+
+	visibility: hidden;
+}
+
 
 #objetivo .mFlechaDv{
 	position: fixed;
