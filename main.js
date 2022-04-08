@@ -37,6 +37,7 @@ function volverAlInicio(){
 	mvFondo('translateX(0%)')
 	mvObjetivo('translateX(200%)');
 	mvHabilidades('translate(200%, 200%)');
+	mvContacto('translateY(200%)');
 }
 
 initBtn.addEventListener("click", e => {
@@ -51,6 +52,8 @@ function irObjetivos(){
 	mvFondo('translateX(-25%)');
 	mvObjetivo("translateX(0%)");
 	mvHabilidades('translate(0%, 200%)');
+	mvContacto('translate(-200%, 200%)');
+
 }
 
 flecha.addEventListener("click", e => {
@@ -65,11 +68,43 @@ const habBtn = document.querySelector('.habBtn');
 const flechaImg1Btn = document.querySelector ('.flechaImg1');
 
 function irHabilidades(){
-		mvObjetivo('translateY(-200%)');
 		mvInicio('translateX(-200%)');
-		mvFondo('translate(-25%,-25%)');
+		mvObjetivo('translateY(-200%)');
 		mvHabilidades('translate(0%, 0%)');
+		mvContacto('translateX(-200%)');
+
+		mvFondo('translate(-25%,-25%)');
+		
 }
+
+const cntBtn = document.querySelector('.cntBtn');
+const flechaImg2 = document.querySelector('.flechaImg2');
+
+
+
+
+
+function irContacto(){
+
+	mvInicio('translateY(-200%)');
+	mvObjetivo('translate(200%, -200%)');
+	mvHabilidades('translate(200%, 0%)')
+	mvContacto('translate(0%)');
+	
+
+	mvFondo('translateY(-25%)');
+}
+
+flechaImg2.addEventListener("click", e=>{
+	irContacto();
+})
+
+
+cntBtn.addEventListener("click", e=>{
+	irContacto();
+
+})
+
 
 habBtn.addEventListener("click", e => {
 	irHabilidades();
@@ -118,6 +153,15 @@ function mvHabilidades(str){
 	habilidades.style.transition = ("transform 2s")
 }
 
+function mvContacto(str){
+
+	let contacto = document.getElementById('contacto');
+
+	contacto.style.transform = (str);
+	contacto.style.transition = ('transform 2s')
+
+}
+
 
 
 function escribir(str, cls){
@@ -144,15 +188,6 @@ function escribir(str, cls){
 
 	return 1;
 }
-
-
-
-
-
-
-
-
-
 
 
 

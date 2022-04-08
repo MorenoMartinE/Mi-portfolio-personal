@@ -509,19 +509,187 @@ body .flecha .flechaImg{
 	transform: rotate(180deg);
 	top: 45%;
 
+
 	animation: iluminar3;
 	animation-delay: 0s;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate ;
 	animation-timing-function: ease-in-out;
+
+	cursor: pointer;
+}
+/*-- Habilidades  -----------------------------------------------------------------------------------------*/
+
+#contacto{
+	position: fixed;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	width: 60%;
+	height: 87%;
+
+	margin-top: 5%;
+	margin-left: 20%;
+
+
+	top: 0px;
+	left: 0px;
+	
+	border-radius: .25em;
+
+	transform: translate(0%, 200%);
+
+
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.contact-wrapper {
+	border-radius: .25em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 1);
+
+    border: solid 2px white;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    backdrop-filter: blur(5px);
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.contact-form form button {
+    background: rgba(0, 136, 169, 1);
+    border: 0;
+    border-radius: 50px;
+
+    width: 150px;
+    height: 50px;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: rgba(0, 136, 169, 0.8);
+    transition: background-color 1s ease-out;
+    outline: 0;
+
+    cursor: pointer;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.logo{
+	max-width: 60px;
+	display: block;
+	margin: 50% 0;
+}
+
+
+@media(min-width: 700px) {
+ 
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+
 }
 
 
 
 
 
-/*-- Habilidades  -----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -839,8 +1007,6 @@ body .flecha .flechaImg{
 	}
 
 /*-- Objetivo  --------------------------------------------------------------------------------------------*/
-
-
 
 
 
