@@ -269,7 +269,7 @@ body .flecha .flechaImg{
 
 
 .pp1{
-	background-color: #2874A6  ;
+	background-color: #1F618D   ;
 	font-family: 'Grape Nuts', cursive;
 	font-weight: 600;
 	font-size: 55px;
@@ -284,7 +284,7 @@ body .flecha .flechaImg{
 }
 
 .pp2{
-	background-color: #5DADE2  ;
+	background-color: #2471A3;
 	font-family: 'Cutive Mono', monospace;
 	font-weight: 200;
 	font-size: 32px;
@@ -301,7 +301,7 @@ body .flecha .flechaImg{
 }
 
 .pp3{
-	background-color: #A3E4D7;
+	background-color: #2980B9;
 	color: black;
 	font-family: 'Beau Rivage', cursive;
 	font-weight: 300;
@@ -321,7 +321,7 @@ body .flecha .flechaImg{
 }
 
 .pp4{
-	background-color: #D0D3D4;
+	background-color: #5499C7;
 	font-family: 'Rubik Moonrocks', cursive;
 	font-weight: 100;
 	font-size: 32px;
@@ -340,7 +340,7 @@ body .flecha .flechaImg{
 }
 
 .pp5{
-	background-color: #797D7F;
+	background-color: #7FB3D5;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 100;
 	font-size: 32px;
@@ -359,7 +359,7 @@ body .flecha .flechaImg{
 }
 
 .pp6{
-	background-color: #A1B983;
+	background-color: #A9CCE3;
 
 
 	font-weight: 100;
@@ -378,6 +378,7 @@ body .flecha .flechaImg{
 
 	visibility: hidden;
 }
+
 
 
 #objetivo .mFlechaDv{
@@ -771,15 +772,6 @@ body .flecha .flechaImg{
 	}
 }
 
-@keyframes parpadeo{
-	0%{
-		filter: brightness(.5);
-	}
-	100%{
-		filter: brightness(1.75);
-	}
-}
-
 @keyframes transicion{
 	0%{
 		opacity: 1;
@@ -801,19 +793,6 @@ body .flecha .flechaImg{
 	}
 }
 /*-- Animaciones -------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -867,10 +846,13 @@ body .flecha .flechaImg{
 		width: 190px;
 	}
 
+	#contacto{
+		width: 92%;
+		height: 92%;
 
-
-
-
+		margin-top: 3.75%;
+		margin-left: 3.75%;
+	}
 }
 
 
@@ -1033,7 +1015,6 @@ body .flecha .flechaImg{
 	.pp5{
 		transform: translateY(600px);
 	}
-
 }
 
 
