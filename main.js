@@ -1,4 +1,5 @@
 const desplegarMM = document.querySelector('.btnMenu');
+let anm2 = false;
 
 function mostrarMenu(){
 	
@@ -53,7 +54,12 @@ function irObjetivos(){
 	mvObjetivo("translateX(0%)");
 	mvHabilidades('translate(0%, 200%)');
 	mvContacto('translate(-200%, 200%)');
+	armadoObjetivo();
+	anm2 = true;
 
+	setInterval(function(){
+			armadoObjetivo();
+		}, 4000);
 }
 
 flecha.addEventListener("click", e => {
@@ -66,6 +72,7 @@ objtBtn.addEventListener("click", e => {
 
 const habBtn = document.querySelector('.habBtn');
 const flechaImg1Btn = document.querySelector ('.flechaImg1');
+const flechaImg1Movil = document.querySelector('.flechaImg1Movil')
 
 function irHabilidades(){
 		mvInicio('translateX(-200%)');
@@ -76,6 +83,10 @@ function irHabilidades(){
 		mvFondo('translate(-25%,-25%)');
 		
 }
+
+flechaImg1Movil.addEventListener("click", e =>{
+	irHabilidades();
+})
 
 const cntBtn = document.querySelector('.cntBtn');
 const flechaImg2 = document.querySelector('.flechaImg2');
@@ -100,7 +111,6 @@ flechaImg2.addEventListener("click", e=>{
 
 cntBtn.addEventListener("click", e=>{
 	irContacto();
-
 })
 
 
@@ -211,10 +221,13 @@ function escribir(str, cls){
 
 
 
+
 //---------------------------------------------------------------------------------------------------------
 
 
 var contadorTr = 0;
+
+
 
 function armadoObjetivo(){
 
@@ -223,81 +236,75 @@ function armadoObjetivo(){
 
 
 
+	
 
-	console.log(1);
+		switch(contadorTr){
+			case 0:		
 
+				escribir('Trabajo como ↓' , 'p1');
+				contadorTr++;
+				return false;
+				break;
+			case 1:
 
-	switch(contadorTr){
-		case 0:		
+				arrPp[5].style.transform = ("translate(0px, 0px)");
+				arrPp[5].style.transition = ("transform 2s")
+				
+				escribir('Desarrollador web frontend ←' , 'p2');
+				contadorTr++;
+				return false;
+				break;
+			case 2:
+				arrPp[4].style.visibility = ('visible');
+				arrPp[4].style.transform = ("translate(0px, 0px)");
+				arrPp[4].style.transition = ("transform 2s")
 
-			escribir('Trabajo como ↓' , 'p1');
+				escribir('Y actualmente estoy en busqueda ←' , 'p3');
+				contadorTr++;
+				return false;
+				break;
+			case 3:
+				arrPp[3].style.visibility = ('visible')
+				arrPp[3].style.transform = ("translate(0px, 0px)");
+				arrPp[3].style.transition = ("transform 2s")
 
-			return true;
-			break;
-		case 1:
+				escribir('De mi próximo reto profesional↑' , 'p4');
+				contadorTr++;
+				break;
+			case 4:
+				arrPp[0].style.visibility = ('visible');
+				arrPp[0].style.transform = ("rotateY(0deg)");
+				arrPp[0].style.transition = ("transform 2s");
+				
+				flecha2[0].style.display = ('block');
+				flecha2[0].style.transform = ('translateY(0%) rotate(90deg)');
+				flecha2[0].style.transition = ('transform 2s');
+				flecha2[0].style.animation = ('iluminar2 1s ease-in-out 2s infinite alternate');
+				
+				escribir('Espero que este pequeño proyecto →' , 'p5');
+				contadorTr++;
+				return false;
+				break;
+			case 5:
+				arrPp[1].style.visibility = ('visible')
+				arrPp[1].style.transform = ("translate(0px, 0px)");
+				arrPp[1].style.transition = ("transform 2s")
 
-			arrPp[5].style.transform = ("translate(0px, 0px)");
-			arrPp[5].style.transition = ("transform 2s")
-			
-			escribir('Desarrollador web frontend ←' , 'p2');
+				escribir('Sea suficiente para despertar tu interés ←' , 'p6');
+				contadorTr++;
+				return false;
+			default:
+				return true;			
+				break;
 
-			return true;
-			break;
-		case 2:
-			arrPp[4].style.visibility = ('visible');
-			arrPp[4].style.transform = ("translate(0px, 0px)");
-			arrPp[4].style.transition = ("transform 2s")
+	
 
-			escribir('Y actualmente estoy en busqueda ←' , 'p3');
-
-			return true;
-			break;
-		case 3:
-			arrPp[3].style.visibility = ('visible')
-			arrPp[3].style.transform = ("translate(0px, 0px)");
-			arrPp[3].style.transition = ("transform 2s")
-
-			escribir('De mi próximo reto profesional↑' , 'p4');
-			return true;
-			break;
-		case 4:
-			arrPp[0].style.visibility = ('visible');
-			arrPp[0].style.transform = ("rotateY(0deg)");
-			arrPp[0].style.transition = ("transform 2s");
-			
-			flecha2[0].style.display = ('block');
-			flecha2[0].style.transform = ('translateY(0%) rotate(90deg)');
-			flecha2[0].style.transition = ('transform 2s');
-			flecha2[0].style.animation = ('iluminar2 1s ease-in-out 2s infinite alternate');
-			
-			escribir('Espero que este pequeño proyecto →' , 'p5');
-			return true;
-			break;
-		case 5:
-			arrPp[1].style.visibility = ('visible')
-			arrPp[1].style.transform = ("translate(0px, 0px)");
-			arrPp[1].style.transition = ("transform 2s")
-
-			escribir('Sea suficiente → Para despertar tu interés ←' , 'p6');
-			return true;
-		default:
-			return false;			
-			break;
+		
 	}
+		
 }
 
-let anm2 = false;
 
-flecha.addEventListener("click", e => {
-	armadoObjetivo();
-	anm2 = true;
-})
 
-setInterval(function(){
-		if(anm2){
-			contadorTr++;
-			anm2 = armadoObjetivo();
-		}
-	}, 4000);
 
 
