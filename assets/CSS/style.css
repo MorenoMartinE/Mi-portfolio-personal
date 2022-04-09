@@ -383,10 +383,6 @@ body .flecha .flechaImg{
 #objetivo .mFlechaDv{
 	position: fixed;
 	right: 0px;
-}
-
-#objetivo .mFlechaDv{
-	position: fixed;
 	width: 250px;
 
 
@@ -827,7 +823,44 @@ body .flecha .flechaImg{
 
 
 
+@media (max-width: 1280px){
+	.satelite{
+		display: none;
+	}
 
+	body .flecha .flechaImg{
+		width: 200px;
+	}
+
+
+	.flecha1{
+		width: 220px;
+	}
+
+	.tierra{
+		margin: 50px;
+	}
+
+
+	#objetivo .contenedor .papper{
+	min-height: 250px;
+	min-width: 250px;
+	max-height: 250px;;
+	max-width: 250px;;
+	
+	}
+
+	#objetivo .mFlechaDv{
+	right: 25px;
+	width: 200px;
+	}
+
+	#habilidades .contenedor .flecha .flechaImg2{
+		width: 180px;
+
+	}
+
+}
 
 
 
@@ -852,7 +885,8 @@ body .flecha .flechaImg{
 
 }
 
-/*-- Responsive --------------------------------------------------------------------------------------------*/
+
+
 @media (max-width: 1243px){
 /*-- Nav Bar ----------------------------------------------------------------------------------------------*/
 
