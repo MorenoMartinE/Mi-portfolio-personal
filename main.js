@@ -257,7 +257,7 @@ function armadoObjetivo(){
 			arrPp[3].style.transform = ("translate(0px, 0px)");
 			arrPp[3].style.transition = ("transform 2s")
 
-			escribir('De mi proximo reto profesional↑' , 'p4');
+			escribir('De mi próximo reto profesional↑' , 'p4');
 			return true;
 			break;
 		case 4:
@@ -278,7 +278,7 @@ function armadoObjetivo(){
 			arrPp[1].style.transform = ("translate(0px, 0px)");
 			arrPp[1].style.transition = ("transform 2s")
 
-			escribir('Sea suficiente → Para despertar tu interes ←' , 'p6');
+			escribir('Sea suficiente → Para despertar tu interés ←' , 'p6');
 			return true;
 		default:
 			return false;			
