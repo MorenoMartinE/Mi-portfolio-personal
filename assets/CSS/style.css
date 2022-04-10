@@ -552,6 +552,11 @@ body .flecha .flechaImg{
 #habilidades .contenedor.proyectoMovil{
 	display: none;
 }
+
+
+.proyectoMovil{
+	display: none;
+}
 /*-- Habilidades  -----------------------------------------------------------------------------------------*/
 
 
