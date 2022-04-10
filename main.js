@@ -29,6 +29,24 @@ desplegarMM.addEventListener("click", e => {
 	mostrarMenu();
 })
 
+const pr01 = document.querySelector('.projectImg')
+
+function prTgTranslate(){
+
+	let tec = document.getElementsByClassName('lenguajes')
+	let app = document.getElementsByClassName('tecnologias')
+
+	tec[0].style.transform = ("translateX(0%)")
+	tec[0].style.transition = ("transform 2s")
+	app[0].style.transform = ("translateX(0%)")
+	app[0].style.transition = ("transform 3s")
+}
+
+pr01.addEventListener("click", e => {
+	prTgTranslate();
+})
+
+
 //------------------------------------------------------------------------------------------------------
 
 const initBtn = document.querySelector('.initBtn');
