@@ -1,3 +1,115 @@
+var idioma = 'esp';
+var headerText = [];
+var clsNameHeaderTextItems = 'nvt';
+var inicioText = [];
+var clsNameInicioTextItems = 'int';
+var armadoTexto = [{}];
+var proyectosText = [];
+var clsNameProyectosTextItems = 'ptt';
+var formText = [];
+var clsNameContactoTextItems = 'cti';
+
+
+
+function idiomaSelect(){
+
+	if(idioma === 'esp'){
+		headerText = ['Inicio', 'Objetivo', 'Proyectos', 'Contacto'];
+		inicioText = ['Hola.', 'Yo soy', 'Martin'];
+		proyectosText = ['Proyectos', 'Lenguajes', 'Tecnologías'];
+		formText = ['Nombre', 'E-mail', 'Teléfono', 'Asunto', 'Mensaje', 'Enviar'];
+
+		armadoTexto = [{
+			texto: 'Trabajo como ↓',
+			elemento: 'p1',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'Desarrollador web frontend ←',
+			elemento: 'p2',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'Y actualmente estoy en busqueda ←',
+			elemento: 'p3',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'De mi próximo reto profesional↑',
+			elemento: 'p4',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'Espero que este pequeño proyecto →',
+			elemento: 'p5',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'Sea suficiente para despertar tu interés ←',
+			elemento: 'p6',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		];
+	}else{
+		headerText = ['Home', 'Objective', 'Projects', 'Contact'];
+		inicioText = ['Hi.', 'I am', 'Martin'];
+		proyectosText = ['Projects', 'Program Languages', 'Software'];
+		formText = ['Name', 'E-mail', 'Phone', 'Affair', 'Message', 'Submit'];
+
+		armadoTexto = [{
+			texto: 'I work as ↓',
+			elemento: 'p1',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'Front-end web development ←',
+			elemento: 'p2',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'And I\'m currently looking ←',
+			elemento: 'p3',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'My next professional challenge↑',
+			elemento: 'p4',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'I hope this little project →',
+			elemento: 'p5',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		{
+			texto: 'Will be enough to pique your interest. ←',
+			elemento: 'p6',
+			visivilidad: 'visible',
+			posicion: 'translate(0px, 0px)',
+		},
+		];
+	}
+
+
+	inyectarTexto(headerText, clsNameHeaderTextItems);
+	inyectarTexto(inicioText, clsNameInicioTextItems);
+	inyectarTexto(proyectosText, clsNameProyectosTextItems);
+	inyectarTexto(formText, clsNameContactoTextItems);
+}
+
+idiomaSelect();
+
 const desplegarMM = document.querySelector('.btnMenu');
 let anm2 = false;
 
@@ -44,12 +156,66 @@ function prTgTranslate(){
 
 pr01.addEventListener("click", e => {
 	prTgTranslate();
-})
-
+});
 
 //------------------------------------------------------------------------------------------------------
 
 const initBtn = document.querySelector('.initBtn');
+const flecha = document.querySelector('.flechaImg');
+const objtBtn = document.querySelector('.objtBtn');
+const cntBtn = document.querySelector('.cntBtn');
+const flechaImg2 = document.querySelector('.flechaImg2');
+const habBtn = document.querySelector('.habBtn');
+const flechaImg1Btn = document.querySelector ('.flechaImg1');
+const espIcn = document.querySelector('.esp');
+const engIcn = document.querySelector('.eng');
+
+const srtTransform = 'transform 2s'
+
+function mvFondo(str){
+
+	let fondo = document.getElementById('fondo');
+
+	fondo.style.transform = (str);
+	fondo.style.transition = (srtTransform);
+}
+
+function mvObjetivo(str){
+
+	let objetivo = document.getElementById('objetivo');
+
+	objetivo.style.transform = (str);
+	objetivo.style.transition = (srtTransform);
+}
+
+function mvInicio(str){
+
+	let inicio = document.getElementById('inicio');
+	let flecha = document.getElementById('flecha');
+
+	inicio.style.transform = (str);
+	flecha.style.transform = (str);
+	inicio.style.transition = (srtTransform);
+	flecha.style.transition = (srtTransform);
+
+}
+
+function mvHabilidades(str){
+
+	let habilidades = document.getElementById('habilidades');
+
+	habilidades.style.transform = (str);
+	habilidades.style.transition = (srtTransform)
+}
+
+function mvContacto(str){
+
+	let contacto = document.getElementById('contacto');
+
+	contacto.style.transform = (str);
+	contacto.style.transition = (srtTransform)
+
+}
 
 function volverAlInicio(){
 	mvInicio('translateX(0%)');
@@ -57,14 +223,7 @@ function volverAlInicio(){
 	mvObjetivo('translateX(200%)');
 	mvHabilidades('translate(200%, 200%)');
 	mvContacto('translateY(200%)');
-}
-
-initBtn.addEventListener("click", e => {
-	volverAlInicio();
-})
-
-const flecha = document.querySelector('.flechaImg');
-const objtBtn = document.querySelector('.objtBtn');
+};
 
 function irObjetivos(){
 	mvInicio('translateX(-200%)');
@@ -72,25 +231,14 @@ function irObjetivos(){
 	mvObjetivo("translateX(0%)");
 	mvHabilidades('translate(0%, 200%)');
 	mvContacto('translate(-200%, 200%)');
-	armadoObjetivo();
+	armadoObjetivo(armadoTexto);
 	anm2 = true;
 
 	setInterval(function(){
-			armadoObjetivo();
-		}, 4000);
-}
+		armadoObjetivo(armadoTexto);
+	}, 3000);
+};
 
-flecha.addEventListener("click", e => {
-	irObjetivos();
-})
-
-objtBtn.addEventListener("click", e => {
-	irObjetivos();
-})
-
-const habBtn = document.querySelector('.habBtn');
-const flechaImg1Btn = document.querySelector ('.flechaImg1');
-const flechaImg1Movil = document.querySelector('.flechaImg1Movil')
 
 function irHabilidades(){
 		mvInicio('translateX(-200%)');
@@ -100,19 +248,10 @@ function irHabilidades(){
 
 		mvFondo('translate(-25%,-25%)');
 		
-}
-
-flechaImg1Movil.addEventListener("click", e =>{
-	irHabilidades();
-})
-
-const cntBtn = document.querySelector('.cntBtn');
-const flechaImg2 = document.querySelector('.flechaImg2');
-
+};
 
 
 function irContacto(){
-
 	mvInicio('translateY(-200%)');
 	mvObjetivo('translate(200%, -200%)');
 	mvHabilidades('translate(200%, 0%)')
@@ -120,75 +259,67 @@ function irContacto(){
 	
 
 	mvFondo('translateY(-25%)');
-}
+};
+
+
+initBtn.addEventListener("click", e => {
+	volverAlInicio();
+});
+
+flecha.addEventListener("click", e => {
+	irObjetivos();
+});
+
+objtBtn.addEventListener("click", e => {
+	irObjetivos();
+});
+
 
 flechaImg2.addEventListener("click", e=>{
 	irContacto();
-})
-
+});
 
 cntBtn.addEventListener("click", e=>{
 	irContacto();
-})
-
+});
 
 habBtn.addEventListener("click", e => {
 	irHabilidades();
-})
+});
 
 flechaImg1Btn.addEventListener("click", e => {
 	irHabilidades();
-})
+});
 
+espIcn.addEventListener("click", e => {
+	idioma = 'esp';
+	idiomaSelect();
+});
+
+engIcn.addEventListener("click", e => {
+	idioma = 'eng';
+	idiomaSelect();
+});
 
 
 //-------------------------------------------------------------------------------------------------------
 
-function mvFondo(str){
 
-	let fondo = document.getElementsByClassName('fondo');
 
-	fondo[0].style.transform = (str);
-	fondo[0].style.transition = ("transform 2s");
+//---------------------------------------------------------------------------------------------------------
+
+
+function inyectarTexto(str, cls){
+	let el = document.getElementsByClassName(cls)
+
+	for(let i = 0; i < str.length; i++){
+		el[i].innerHTML = str[i];
+	}
 }
 
-function mvObjetivo(str){
 
-	let objetivo = document.getElementById('objetivo');
-
-	objetivo.style.transform = (str);
-	objetivo.style.transition = ("transform 2s");
-}
-
-function mvInicio(str){
-
-	let inicio = document.getElementById('inicio');
-	let flecha = document.getElementsByClassName('flecha');
-
-	inicio.style.transform = (str);
-	flecha[0].style.transform = (str);
-	inicio.style.transition = ("transform 2s");
-	flecha[0].style.transition = ("transform 2s");
-
-}
-
-function mvHabilidades(str){
-
-	let habilidades = document.getElementById('habilidades');
-
-	habilidades.style.transform = (str);
-	habilidades.style.transition = ("transform 2s")
-}
-
-function mvContacto(str){
-
-	let contacto = document.getElementById('contacto');
-
-	contacto.style.transform = (str);
-	contacto.style.transition = ('transform 2s')
-
-}
-
+var contadorTr = 0;
+var controlAnm = true;
 
 function escribir(str, cls){
 
@@ -210,115 +341,78 @@ function escribir(str, cls){
 		intervalo = Math.random() * (170 - 150) + 150;
 
 	}, intervalo);
-
-
-	return 1;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//---------------------------------------------------------------------------------------------------------
-
-
-var contadorTr = 0;
-
-
-
-function armadoObjetivo(){
+function armadoObjetivo(armado){
 
 	let arrPp = document.getElementsByClassName('papper');
-	let flecha2 = document.getElementsByClassName('flechaImg1');
+	let flecha2 = document.getElementById('flechaImg1');
 
 	
-
 		switch(contadorTr){
 			case 0:		
+				arrPp[contadorTr].style.visibility = (armado[contadorTr].visivilidad);
+				arrPp[contadorTr].style.transform = (armado[contadorTr].posicion)
+				arrPp[contadorTr].style.transition = (srtTransform);
+				escribir(armado[contadorTr].texto, armado[contadorTr].elemento);
 
-				escribir('Trabajo como ↓' , 'p1');
+				flecha2.style.display = ('block');
+				flecha2.style.transition = ('transform 5s');
+				flecha2.style.transform = ('translateY(0%) rotate(90deg)');
+				flecha2.style.animation = ('iluminar2 1s ease-in-out 6s infinite alternate');
+
 				contadorTr++;
 				return false;
 				break;
 			case 1:
+				arrPp[contadorTr].style.visibility = (armado[contadorTr].visivilidad);
+				arrPp[contadorTr].style.transform = (armado[contadorTr].posicion)
+				arrPp[contadorTr].style.transition = (srtTransform);
+				escribir(armado[contadorTr].texto, armado[contadorTr].elemento);
 
-				arrPp[5].style.transform = ("translate(0px, 0px)");
-				arrPp[5].style.transition = ("transform 2s")
-				
-				escribir('Desarrollador web frontend ←' , 'p2');
 				contadorTr++;
 				return false;
 				break;
 			case 2:
-				arrPp[4].style.visibility = ('visible');
-				arrPp[4].style.transform = ("translate(0px, 0px)");
-				arrPp[4].style.transition = ("transform 2s")
+				arrPp[contadorTr].style.visibility = (armado[contadorTr].visivilidad);
+				arrPp[contadorTr].style.transform = (armado[contadorTr].posicion)
+				arrPp[contadorTr].style.transition = (srtTransform);
+				escribir(armado[contadorTr].texto, armado[contadorTr].elemento);
 
-				escribir('Y actualmente estoy en busqueda ←' , 'p3');
 				contadorTr++;
 				return false;
 				break;
 			case 3:
-				arrPp[3].style.visibility = ('visible')
-				arrPp[3].style.transform = ("translate(0px, 0px)");
-				arrPp[3].style.transition = ("transform 2s")
+				arrPp[contadorTr].style.visibility = (armado[contadorTr].visivilidad);
+				arrPp[contadorTr].style.transform = (armado[contadorTr].posicion)
+				arrPp[contadorTr].style.transition = (srtTransform);
+				escribir(armado[contadorTr].texto, armado[contadorTr].elemento);
 
-				escribir('De mi próximo reto profesional↑' , 'p4');
 				contadorTr++;
 				break;
 			case 4:
-				arrPp[0].style.visibility = ('visible');
-				arrPp[0].style.transform = ("rotateY(0deg)");
-				arrPp[0].style.transition = ("transform 2s");
-				
-				flecha2[0].style.display = ('block');
-				flecha2[0].style.transform = ('translateY(0%) rotate(90deg)');
-				flecha2[0].style.transition = ('transform 2s');
-				flecha2[0].style.animation = ('iluminar2 1s ease-in-out 2s infinite alternate');
-				
-				escribir('Espero que este pequeño proyecto →' , 'p5');
+				arrPp[contadorTr].style.visibility = (armado[contadorTr].visivilidad);
+				arrPp[contadorTr].style.transform = (armado[contadorTr].posicion)
+				arrPp[contadorTr].style.transition = (srtTransform);
+				escribir(armado[contadorTr].texto, armado[contadorTr].elemento);
+
 				contadorTr++;
 				return false;
 				break;
 			case 5:
-				arrPp[1].style.visibility = ('visible')
-				arrPp[1].style.transform = ("translate(0px, 0px)");
-				arrPp[1].style.transition = ("transform 2s")
+				arrPp[contadorTr].style.visibility = (armado[contadorTr].visivilidad);
+				arrPp[contadorTr].style.transform = (armado[contadorTr].posicion)
+				arrPp[contadorTr].style.transition = (srtTransform);
+				escribir(armado[contadorTr].texto, armado[contadorTr].elemento);
 
-				escribir('Sea suficiente para despertar tu interés ←' , 'p6');
 				contadorTr++;
 				return false;
 			default:
 				return true;			
 				break;
-
-	
-
-		
-	}
-		
-}
+	}	
+};
 
 
 

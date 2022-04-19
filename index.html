@@ -8,31 +8,35 @@
   <title>Moreno Martin E.</title>
 </head>
 <body>
-  <div class="fondo"></div>
+  <div class="fondo" id="fondo"></div>
   <header>  
     <nav>
       <div class="navLinksMovile">
         <img class="btnMenu" src="assets/image/btnMenu.png">
       </div>
       <ul>
-        <li class="navListItem"><a href="#" class="initBtn">Inicio</a></li>
-        <li class="navListItem"><a href="#" class="objtBtn">Objetivo</a></li>
-        <li class="navListItem"><a href="#" class="habBtn">Proyectos</a></li>
+        <li class="navListItem"><a href="#" class="nvt initBtn"></a></li>
+        <li class="navListItem"><a href="#" class="nvt objtBtn"></a></li>
+        <li class="navListItem"><a href="#" class="nvt habBtn"></a></li>
       </ul>
-      <a href="#" class="ct"><button class="cntBtn">Contacto</button></a>
+      <div class="flagDiv">
+        <a href="#" class="ct"><button class="nvt cntBtn"></button></a>
+        <img  class="esp" src="assets/image/Arg.png">
+        <img  class="eng" src="assets/image/EEUU.png">
+      </div>
     </nav>
   </header>
   <section id="inicio">
     <div class="contenedor">
       <div>
         <div class="palabra1">
-          <p>Hola.<br></p>
+          <p class="int"><br></p>
         </div>
         <div class="palabra2">
-          <p>Yo soy<br></p>
+          <p class="int"><br></p>
         </div>
         <div class="palabra3">
-          <p>Martin<br></p>
+          <p class="int"><br></p>
         </div>
       </div>
       <div class="animacion">
@@ -41,45 +45,31 @@
         <div class="satelite"></div>
     </div>
   </section>
-  <div class="flecha">
+  <div class="flecha" id="flecha">
     <img class="flechaImg" src="assets/image/flecha.png">
   </div>
   <section id="objetivo">
     <div class="contenedor">
-      <div class="papper pp5"><p class="p5"><p></div>
-      <div class="papper pp6"><p class="p6"></div>
-      <div class="papper pp1"><p class="p1"></p></div>      
-    </div>
-    <div class="contenedor">
-      <div class="papper pp4"><p class="p4"></div>
-      <div class="papper pp3"><p class="p3"></p></div>
+      <div class="papper pp1"><p class="p1"></p></div>
       <div class="papper pp2"><p class="p2"></p></div>
-    </div>
+      <div class="papper pp3"><p class="p3"></p></div>
+      <div class="papper pp4"><p class="p4"></p></div>
+      <div class="papper pp5"><p class="p5"></p></div>
+      <div class="papper pp6"><p class="p6"></p></div>
     <div class="mFlechaDv">
-      <img class="flechaImg1" src="assets/image/flecha.png">
-    </div>
-    <div class="ObjetivosMovil">
-      <p class="p1">Trabajo como ↓</p>
-      <p class="p2">Desarrollador web frontend ↓</p>
-      <p class="p3">Y actualmente estoy en busqueda ↓</p>
-      <p class="p4">De mi próximo reto profesional ↓</p>
-      <p class="p5">Espero que este pequeño proyecto ↓</p>
-      <p class="p6">Sea suficiente para despertar tu interés ←</p>
-      <div class="mFlechaDvMovil">
-        <img class="flechaImg1Movil" src="assets/image/flecha.png">
-      </div>
+      <img class="flechaImg1" id ="flechaImg1" src="assets/image/flecha.png">
     </div>
   </section>
   <section id="habilidades">
     <div class="contenedor">
       <div class="proyecto">
-        <h1>Proyectos</h1>
+        <h1 class="ptt">Proyectos</h1>
         <div>
           <img class="projectImg" src="assets/image/portfolioPrw.png">
         </div>
       </div>
       <div class="lenguajes">
-        <h1>Lenguajes</h1>
+        <h1 class="ptt"></h1>
         <div>
           <img class="lenguajesLogo lg01" src="assets/image/html5.png">
         </div>
@@ -91,7 +81,7 @@
         </div>
       </div> 
       <div class="tecnologias">
-        <h1>Tecnologías</h1>
+        <h1 class="ptt"></h1>
         <div>
           <img class="tecnologiasLogo" src="assets/image/sublimeText.png">
         </div>
@@ -102,12 +92,6 @@
           <img class="tecnologiasLogo" src="assets/image/gitHub.png">
         </div>   
       </div>
-      <div class="proyectoMovil"> 
-        <h1>Proyectos</h1>
-        <div>
-          <img class="projectImg" src="assets/image/portfolioPrw.png">
-        </div>
-      </div>
       <div class="flecha">
         <img class="flechaImg2" src="assets/image/flecha.png">
       </div>
@@ -116,31 +100,29 @@
   <section id="contacto">
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
-                <h3>Contactame</h3>
                 <form action="">
                     <p>
-                        <label>Nombre</label>
+                        <label class="cti"></label>
                         <input type="text" name="fullname">
                     </p>
                     <p>
-                        <label>Email</label>
+                        <label class="cti"></label>
                         <input type="email" name="email">
                     </p>
                     <p>
-                        <label>Teléfono</label>
+                        <label class="cti"></label>
                         <input type="tel" name="phone">
                     </p>
                     <p>
-                        <label>Asunto</label>
+                        <label class="cti"></label>
                         <input type="text" name="affair">
                     </p>
                     <p class="block">
-                       <label>Mensaje</label> 
+                       <label class="cti"></label> 
                         <textarea name="message" rows="3"></textarea>
                     </p>
                     <p class="block">
-                        <button>
-                            Enviar
+                        <button class="cti">                     
                         </button>
                     </p>
                 </form>

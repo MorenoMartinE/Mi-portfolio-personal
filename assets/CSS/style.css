@@ -6,9 +6,6 @@
 	padding: 0;
 }
 
-
-/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
-
 .fondo{
 	position: fixed;
 	top: 0px;
@@ -21,6 +18,8 @@
 	background-image: linear-gradient(120deg, #24252A 65%, rgba(0, 136, 169, .5) 35%);
 }
 
+
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
 
 header{
 	position: fixed;
@@ -98,6 +97,7 @@ header nav li a:hover {
 header nav a button{
 	cursor: pointer;
 	padding: 9px 25px;
+	margin-right: 45px;
 	background-color: rgba(0, 136, 169, 1);
 	border:  none;
 	border-radius: 50px;
@@ -107,6 +107,20 @@ header nav a button{
 header nav a button:hover{
 	background-color: rgba(0, 136, 169, 0.8);
 }
+
+header nav div img {
+	width: 35px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+header nav .flagDiv{
+	display: flex;
+	justify-content: center;
+}
+
+
+
 /*-- Nav Bar ----------------------------------------------------------------------------------------------*/
 
 
@@ -115,12 +129,13 @@ header nav a button:hover{
 
 /*-- Inicio  ----------------------------------------------------------------------------------------------*/
 #inicio{
-	z-index: 2;
+	position: fixed;
 
 	margin: 0px;
 	padding: 0px;
 
-	height: 700px;
+	width: 100vw;
+	height: 90vh;
 }
 
 
@@ -132,8 +147,6 @@ header nav a button:hover{
 
 	margin-top: 100px;
 
-
-	/*font-family: 'Rubik', sans-serif;*/
 	font-family: 'Rubik Moonrocks', cursive;
 	font-size: 152px;
 }
@@ -229,56 +242,53 @@ body .flecha .flechaImg{
 /*-- Objetivo  --------------------------------------------------------------------------------------------*/
 #objetivo{
 	position: fixed;
+	top: 120px;
+	width: 100%;
+	
 	display: flex;
-	
-	flex-direction: column;
+	justify-content: space-between;
 
-	
-	top: 200px;
-	left: 50px;
+	transform: translateX(200%);	
+}
 
-	width: 90%;
-	height: 100%;
+#objetivo .contenedor{
+	position: relative;
+	width: 80%;
 
-	transform: translateX(200%);
+	display: grid;
+	width: 900px;
+	height: 600px;
+
+	margin-left: 150px;
+
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#objetivo .contenedor .papper{
+	height: 300px;
+	width: 300px;
 
 	display: flex;
 	align-items: center;
-}
-
-
-#objetivo .contenedor{
-	display: flex;
-	align-items: stretch;
-
-	height: 300px;
-	width: 100%;
-}
-
-#objetivo .contenedor .papper{
-	min-height: 300px;
-	min-width: 300px;
-	max-height: 300px;;
-	max-width: 300px;;
+	justify-content: center;
 	
 	border-radius: .25em;
 	margin: 0;
-	display: flex;
-	justify-content: center;
 }
 
 
 .pp1{
-	background-color: #1F618D   ;
+	background-color: #1F618D;
 	font-family: 'Grape Nuts', cursive;
 	font-weight: 600;
 	font-size: 55px;
 	text-align: center;
 
-	align-items: center;
-	justify-content: center;
 
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	grid-column: 3 / 4;
 
 	z-index: 5;
 }
@@ -290,14 +300,17 @@ body .flecha .flechaImg{
 	font-size: 32px;
 	text-align: center;
 
-	align-items: center;
-	justify-content: center;
+	grid-row: 2 / 3;
+	grid-column: 3 / 4;
+
 
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
 
 	z-index: 4;
 
 	transform: translateY(-300px) rotate(90deg);
+
+	visibility: hidden;
 }
 
 .pp3{
@@ -308,8 +321,8 @@ body .flecha .flechaImg{
 	font-size: 36px;
 	text-align: center;
 
-	align-items: center;
-	justify-content: center;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
 
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
 
@@ -327,8 +340,8 @@ body .flecha .flechaImg{
 	font-size: 32px;
 	text-align: center;
 
-	align-items: center;
-	justify-content: center;
+	grid-row: 2/3;
+	grid-column: 1 / 2;
 
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
 
@@ -346,8 +359,8 @@ body .flecha .flechaImg{
 	font-size: 32px;
 	text-align: center;
 
-	align-items: center;
-	justify-content: center;
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
 
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
 
@@ -366,8 +379,8 @@ body .flecha .flechaImg{
 	font-size: 32px;
 	text-align: center;
 
-	align-items: center;
-	justify-content: center;
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
 
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
 
@@ -383,7 +396,8 @@ body .flecha .flechaImg{
 
 #objetivo .mFlechaDv{
 	position: fixed;
-	right: 0px;
+	right: 5%;
+	top: 175px;
 	width: 250px;
 
 
@@ -397,13 +411,17 @@ body .flecha .flechaImg{
 }
 
 #objetivo .mFlechaDv .flechaImg1{
-	transform: translateY(-200%) rotate(90deg);
+	transform: translateY(-300%) rotate(90deg);
 	cursor: pointer;
 }
 
 
-.ObjetivosMovil{display: none;}
-.flechaImg1Movil{display: none;}
+.ObjetivosMovil{
+	display: none;
+}
+.flechaImg1Movil{
+	display: none;
+}
 /*-- Objetivo  --------------------------------------------------------------------------------------------*/
 
 
@@ -456,7 +474,6 @@ body .flecha .flechaImg{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-
 
 
 	height: 100%;
@@ -844,61 +861,6 @@ body .flecha .flechaImg{
 
 
 
-@media (max-width: 1280px){
-	.satelite{
-		display: none;
-	}
-
-	body .flecha .flechaImg{
-		width: 200px;
-	}
-
-
-	.flecha1{
-		width: 220px;
-	}
-
-	.tierra{
-		margin: 50px;
-	}
-
-
-	#objetivo .contenedor .papper{
-	min-height: 250px;
-	min-width: 250px;
-	max-height: 250px;;
-	max-width: 250px;;
-	
-	}
-
-	#objetivo .mFlechaDv{
-	right: 0px;
-	width: 200px;
-	}
-
-	
-	#objetivo .mFlechaDv .flechaImg1{
-		width: 100%;
-		right: 0px;
-		transform: translateY(-400%) rotate(90deg);
-
-	}
-	
-	#habilidades .contenedor .flecha .flechaImg2{
-		width: 190px;
-	}
-
-	#contacto{
-		width: 92%;
-		height: 92%;
-
-		margin-top: 3.75%;
-		margin-left: 3.75%;
-	}
-}
-
-
-
 
 
 
@@ -916,331 +878,122 @@ body .flecha .flechaImg{
 
 
 
+@media (max-width: 1500px) {
 
-
-@media (max-width: 1070px){
-/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
-
-	header nav{
-		display: grid;
-		grid-template-columns: 1ft 1ft;
-
-		animation: transicion;
-		animation-duration: 1.5s;
-
-		background-size: 0px 2px;
-
-		padding-bottom: 2px;
-		backdrop-filter: blur(0px);
-	}
-
-	header nav a button{
-		margin: 15px;
-		margin-bottom: 25px;
-	}
-
-
-	header nav ul{
-		margin-top: 30px;
-		width: 100%;
-	}
-
-	header nav ul li{
-		display: block;
-		text-align: center;
-		width: 100%;
-		padding: 30px;
-		margin-top: 7px;
-
-		font-size: 23px;
-
-		background-color: rgba(200, 200, 200, .9);
-
-		border-width: 2px;
-		border-style: solid;
-		border-color: white;
-
-		border-radius: 50px;
-
-		display: none;
-
-
-	}
-
-	nav ul li a{
-		font-size: 28px;
-		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.0);
-	}
-
-	
-	header nav .navLinksMovile{
-		display: block;
-	}
-
-	header nav .btnMenu{
-		width: 70px;
-		transition: all 0.5s ease 0s;
-		transform: translateY(0px);
-
-		cursor: pointer;
-	}
-
-	header nav .btnMenu:hover{
-		transform: translateY(5px);
-	}
-/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-/*-- Inicio  ----------------------------------------------------------------------------------------------*/
-	#inicio{
-		margin: 0px;
-		max-width: 390px;
-	}
-
-	#inicio .contenedor{
-		flex-direction: column;
-		margin-top: 200px;
-		margin-left: 0px;
-		margin-right: 0px;
-		text-align: center;
-		justify-content: center;
-
-		font-size: 102px;
-	}
-
-	.satelite{
-		display: none;
+	#inicio .contenedor{	
+		font-size: 120px;
+		margin-left: 3vw;
 	}
 
 	body .flecha .flechaImg{
-		width: 100px;
-		right: 70px;
+		width: 15%;
 	}
 
 
-	.flecha1{
-		width: 150px;
-	}
-
-	.tierra{
-		margin: 0px;
-
-		animation-direction: alternate;
-		animation-iteration-count: infinite;
-	}
-/*-- Inicio  ----------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-/*-- Objetivo  --------------------------------------------------------------------------------------------*/
 	#objetivo{
-		margin: 0px;
-		padding: 0px;
-	}
-
-	#objetivo .contenedor{
-		display: none;
-		margin: 0px;
-		padding: 0px;
-	}
-
-	.mFlechaDv{
-		display: none;
-		margin: 0px;
-		padding: 0px;
-	}
-
-	.ObjetivosMovil{
+		position: fixed;
+		top: 120px;
+		width: 100%;
+		
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
+	
+		transform: translateX(200%);	
+	}
+	
+	#objetivo .contenedor{
+		position: relative;
+		width: 80%;
+	
+		display: grid;
+		width: 750px;
+		height: 500px;
+	
+		margin-left: 75px;
+	
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	
+	#objetivo .contenedor .papper{
+		height: 250px;
+		width: 250px;
+	
+		display: flex;
 		align-items: center;
-		flex-direction: column;
-		width: 100%;
-
-	}
-
-	.ObjetivosMovil p{
-		width: 100%;
+		justify-content: center;
+		
 		border-radius: .25em;
-		margin: 7px;
-
-
-		transform: translateX(100%);
-
-		animation: trsX;
-		animation-duration: 2s;
-		animation-timing-function: ease-in-out;
-		animation-fill-mode: forwards;
+		margin: 0;
 	}
 
-	.ObjetivosMovil .p1{
-		background-color: #1F618D   ;
-		font-family: 'Grape Nuts', cursive;
-		font-weight: 600;
-		font-size: 36px;
-		text-align: center;
-		animation-delay: 1s;
+	.pp1{
+		font-size: 52px;
 	}
-
-	.ObjetivosMovil .p2{
-		background-color: #2471A3;
-		font-family: 'Cutive Mono', monospace;
-		font-weight: 200;
+	
+	.pp2{
+		font-size: 28px;
+	}
+	
+	.pp3{
 		font-size: 32px;
-		text-align: center;
-		animation-delay: 2s;
+	}
+	
+	.pp4{
+		font-size: 28px;
+	}
+	
+	.pp5{
+		font-size: 28px;
+	}
+	
+	.pp6{
+		font-size: 28px;
 	}
 
-	.ObjetivosMovil .p3{
-		background-color: #2980B9;
-		color: black;
-		font-family: 'Beau Rivage', cursive;
-		font-weight: 300;
-		font-size: 36px;
-		text-align: center;
-		animation-delay: 3s;
-	}
-
-	.ObjetivosMovil .p4{
-		background-color: #7FB3D5;
-		font-family: 'Oswald', sans-serif;
-		font-weight: 100;
-		font-size: 32px;
-		text-align: center;
-		animation-delay: 4s;
-	}
-
-	.ObjetivosMovil .p5{
-		background-color: #5499C7;
-		font-family: 'Rubik Moonrocks', cursive;
-		font-weight: 100;
-		font-size: 32px;
-		text-align: center;
-		animation-delay: 5s;
-	}
-
-	.ObjetivosMovil .p6{
-		background-color: #A9CCE3;
-		font-weight: 100;
-		font-size: 32px;
-		text-align: center;
-		animation-delay: 6s;
-	}
-
-
-
-	.flechaImg1Movil{
-		transform: rotate(90deg);
-		width: 120px;
-
-		animation: iluminar2;
+	#objetivo .mFlechaDv{
+		position: fixed;
+		right: 2vw;
+		top: 150px;
+	
+		animation: parpadeo;
 		animation-duration: .7s;
 		animation-iteration-count: infinite;
 		animation-direction: alternate;
 		animation-timing-function: ease-in-out;
-
-		display: block;
+	
+		cursor: pointer;
 	}
 
-	#contacto .contact-wrapper{
-	padding-top: 180px ;
-
-	border: 0px;
-	box-shadow: 0px;
-
-	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0);
+	#objetivo .mFlechaDv .flechaImg1{
+		width: 80%;
+		cursor: pointer;
 	}
-
-	.contact-info{
-		flex-direction: row;
-	}
-
-
-
-	#habilidades{
-		display: flex;
-		justify-content: center;
-	}
-
-
-
-	#habilidades .contenedor{
-		margin-top: 250px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	#habilidades .contenedor .proyecto{
-		display: none;
-	}
-
-	#habilidades .contenedor .lenguajes{
-		width: 50px;
-		margin: 5px;
-		height: 300px;
-
-		margin: 20px;
-	}
-
-
-
-
-	#habilidades .contenedor .tecnologias{
-		margin: 5px;
-		width: 50px;
-		height: 260px;
-
-		margin: 20px;
-	}
-
-	#habilidades .contenedor.proyectoMovil{
-		display: flex;
-
-		width: 60px;
-
-		border-radius: .25em;
-		background-color: rgba(255, 255, 255, .1);
-		backdrop-filter: blur(5px);
-	}
-
-
-	#habilidades .contenedor .lenguajes .lenguajesLogo,
-	#habilidades .contenedor .tecnologias .tecnologiasLogo{
-		width: 60px;
-
-
-		margin: 15px;
-	}
-
-	.proyectoMovil{
-		grid-column: 1/3;
-		text-align: center;
-	}
-
-	.proyectoMovil .projectImg{
-		width: 390px;
-	}
-
 
 	#habilidades .contenedor .flecha{
-		display: none;
+		width: 15%;
 	}
+	
+	#habilidades .contenedor .flecha .flechaImg2{
+		position: relative;
+		transform: rotate(180deg);
+		top: 45%;
+		width: 90%;
+	
+		z-index: 5;
+	
+		animation: iluminar3;
+		animation-delay: 0s;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate ;
+		animation-timing-function: ease-in-out;
+	
+		cursor: pointer;
+	}
+
 
 
 
 
 }
-
-
-
-
-
-
-
