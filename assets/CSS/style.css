@@ -1,1 +1,1246 @@
-@import url(https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cutive+Mono&family=Grape+Nuts&family=Montserrat+Alternates&family=Oswald&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik:wght@900&display=swap);*{box-sizing:border-box;margin:0;padding:0}.fondo{position:fixed;top:0;bottom:-50%;right:-50%;left:-50%;z-index:-1;background-image:linear-gradient(120deg,#24252A 65%,rgba(0,136,169,.5) 35%)}header{position:fixed;top:0;left:0;z-index:10}header li,header a,header button{font-family:'Montserrat Alternates',sans-serif;font-size:16px;font-weight:600;color:#edf0f1;text-decoration:none}header nav{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding-top:10px;padding-bottom:10px;padding-left:10%;padding-right:10%;animation:fadeTop,subR;animation-duration:1.5s;backdrop-filter:blur(2px);background-image:linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.4));background-position:0% 100%;background-repeat:no-repeat;background-size:0 3px;animation-fill-mode:forwards;z-index:5}nav .navLinksMovile{display:none}header nav{list-style:none}header nav li{display:inline-block;margin-right:32px}header nav li a{transition:all 0.3s ease 0s}header nav li a:hover{color:rgba(0,136,169,.8)}header nav a button{cursor:pointer;padding:9px 25px;background-color:rgba(0,136,169,1);border:none;border-radius:50px;transition:all 0.3s ease 0s}header nav a button:hover{background-color:rgba(0,136,169,.8)}#inicio{z-index:2;margin:0;padding:0;height:700px}#inicio .contenedor{display:flex;justify-content:center;align-items:center;color:#fff;margin-top:100px;font-family:'Rubik Moonrocks',cursive;font-size:152px}#inicio .contenedor .animacion{align-items:center;justify-content:center}.tierra{max-width:400px;margin:150px;padding-left:50px;padding-right:50px;position:relative;animation:circulo;animation-duration:10s;animation-direction:reverse}.satelite{background-color:rgba(0,136,169,1);width:80px;height:80px;border-radius:50px;position:relative;animation:acercado;animation-duration:12s;animation-fill-mode:forwards}#inicio .contenedor .palabra1{animation:fadeLeft;animation-duration:7s}#inicio .contenedor .palabra2{animation:fadeLeft;animation-duration:5s}#inicio .contenedor .palabra3{animation:fadeLeft;animation-duration:4s}body .flecha{position:fixed;top:0;left:0;height:100%;width:100%}body .flecha .flechaImg{position:absolute;right:30px;bottom:0;filter:brightness(.9);animation:iluminar;animation-delay:8s;animation-duration:1s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:ease-in-out;cursor:pointer}#objetivo{position:fixed;display:flex;flex-direction:column;top:200px;left:50px;width:90%;height:100%;transform:translateX(200%);display:flex;align-items:center}#objetivo .contenedor{display:flex;align-items:stretch;height:300px;width:100%}#objetivo .contenedor .papper{min-height:300px;min-width:300px;max-height:300px;;max-width:300px;;border-radius:.25em;margin:0;display:flex;justify-content:center}.pp1{background-color:#1F618D;font-family:'Grape Nuts',cursive;font-weight:600;font-size:55px;text-align:center;align-items:center;justify-content:center;box-shadow:1px 1px 5px rgba(0,0,0,.6);z-index:5}.pp2{background-color:#2471A3;font-family:'Cutive Mono',monospace;font-weight:200;font-size:32px;text-align:center;align-items:center;justify-content:center;box-shadow:1px 1px 5px rgba(0,0,0,.6);z-index:4;transform:translateY(-300px) rotate(90deg)}.pp3{background-color:#2980B9;color:#000;font-family:'Beau Rivage',cursive;font-weight:300;font-size:36px;text-align:center;align-items:center;justify-content:center;box-shadow:1px 1px 5px rgba(0,0,0,.6);z-index:3;transform:translate(300px,0) rotateY(180deg);visibility:hidden}.pp4{background-color:#5499C7;font-family:'Rubik Moonrocks',cursive;font-weight:100;font-size:32px;text-align:center;align-items:center;justify-content:center;box-shadow:1px 1px 5px rgba(0,0,0,.6);z-index:2;transform:translate(300px,0);visibility:hidden}.pp5{background-color:#7FB3D5;font-family:'Oswald',sans-serif;font-weight:100;font-size:32px;text-align:center;align-items:center;justify-content:center;box-shadow:1px 1px 5px rgba(0,0,0,.6);z-index:1;transform:translateY(300px) rotate(90deg);visibility:hidden}.pp6{background-color:#A9CCE3;font-weight:100;font-size:32px;text-align:center;align-items:center;justify-content:center;box-shadow:1px 1px 5px rgba(0,0,0,.6);transform:translateX(-300px) rotate(-90deg);z-index:0;visibility:hidden}#objetivo .mFlechaDv{position:fixed;right:0;width:250px;animation:parpadeo;animation-duration:.7s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:ease-in-out;cursor:pointer}#objetivo .mFlechaDv .flechaImg1{transform:translateY(-200%) rotate(90deg);cursor:pointer}.ObjetivosMovil{display:none}.flechaImg1Movil{display:none}#habilidades{position:fixed;display:flex;justify-content:center;align-items:center;width:90%;height:87%;margin-top:5%;margin-left:5%;top:0;left:0;transform:translate(200%,200%)}#habilidades .contenedor{position:absolute;float:left;align-items:center;height:100%;width:100%;font-family:'Oswald',sans-serif;font-size:22px;text-shadow:1px 1px 2px #000;text-align:center;color:#fff}#habilidades .contenedor .proyecto{position:relative;float:right;display:flex;flex-direction:column;justify-content:flex-start;height:100%;width:35%;margin:0 15px;border-radius:.25em;background-color:rgba(255,255,255,.3);backdrop-filter:blur(2px)}#habilidades .contenedor .proyecto .flechaDl{margin:20px}#habilidades .contenedor .proyecto .projectImg{margin-top:50px;width:85%;box-shadow:1px 1px 2px #000;border-radius:.25em;cursor:pointer}#habilidades .contenedor .proyecto .projectImg:hover{width:86%}#habilidades .contenedor .lenguajes{position:relative;display:flex;align-items:center;flex-direction:column;margin:0 15px;border-radius:.25em;float:right;height:100%;width:20%;background-color:rgba(255,255,255,.2);backdrop-filter:blur(4px);transform:translateX(500%);transition:translate 2s}#habilidades .contenedor .lenguajes .lenguajesLogo,#habilidades .contenedor .tecnologias .tecnologiasLogo{width:80px;display:block;margin:30px}#habilidades .contenedor .tecnologias{position:relative;display:flex;align-items:center;flex-direction:column;margin:0 15px;border-radius:.25em;float:right;height:100%;width:20%;background-color:rgba(255,255,255,.1);backdrop-filter:blur(5px);transform:translateX(500%);transition:translate 2s}#habilidades .contenedor .flecha{position:fixed;float:left;width:20%}#habilidades .contenedor .flecha .flechaImg2{position:relative;transform:rotate(180deg);top:45%;z-index:5;animation:iluminar3;animation-delay:0s;animation-duration:1s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:ease-in-out;cursor:pointer}#habilidades .contenedor.proyectoMovil{display:none}.proyectoMovil{display:none}#contacto{position:fixed;display:flex;justify-content:center;align-items:center;width:60%;height:87%;margin-top:5%;margin-left:20%;top:0;left:0;border-radius:.25em;transform:translate(0%,200%);font-family:'Montserrat Alternates',sans-serif;font-size:18px;font-weight:600;color:#edf0f1;text-decoration:none}.container{width:100%;height:100%}.contact-info ul{list-style:none;padding:0}.contact-wrapper{border-radius:.25em;box-shadow:3px 3px 15px rgba(0,0,0,1);border:solid 2px #fff}.contact-wrapper>*{padding:1em}.contact-form{backdrop-filter:blur(5px)}.contact-form form{display:grid;grid-template-columns:1fr 1fr}.contact-form form label{display:block}.contact-form form p{margin:0;padding:1em}.contact-form form .block{grid-column:1 / 3}.contact-form form button,.contact-form form input,.contact-form form textarea{width:100%;padding:.7em;border:none;background:none;outline:0;color:#fff;border-bottom:1px solid #fff}.contact-form form button{background:rgba(0,136,169,1);border:0;border-radius:50px;width:150px;height:50px;font-family:'Montserrat Alternates',sans-serif;font-size:18px;font-weight:600;color:#edf0f1;text-decoration:none}.contact-form form button:hover,.contact-form form button:focus{background:rgba(0,136,169,.8);transition:background-color 1s ease-out;outline:0;cursor:pointer}.contact-info{backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:space-between;flex-direction:column}.contact-info h4,.contact-info ul,.contact-info p{text-align:center;margin:0 0 1rem 0}.logo{width:50px}.logo:hover{width:55px}@keyframes trsX{100%{transform:translateX(-5%)}}@keyframes fadeTop{0%{transform:translateY(-100%);opacity:.3}100%{transform:translateY(0%);opacity:1}}@keyframes subR{100%{animation-delay:5s;background-size:100% 2px}}@keyframes acercado{100%{transform:translate(-180px,-90px)}}@keyframes circulo{0%{transform:rotate(0deg)}20%{transform:rotate(120deg)}100%{transform:rotate(240deg)}}@keyframes fadeLeft{0%{transform:translateX(-150%)}100%{transform:translateX(0%)}}@keyframes iluminar{0%{filter:brightness(2);transform:translateX(-30px)}100%{filter:brightness(2);transform:translateX(0)}}@keyframes iluminar2{0%{filter:brightness(2);transform:translateY(0) rotate(90deg)}100%{filter:brightness(2);transform:translateY(+30px) rotate(90deg)}}@keyframes iluminar3{0%{filter:brightness(2);transform:translateX(-30px) rotate(180deg)}100%{filter:brightness(2);transform:translateX(0) rotate(180deg)}}@keyframes transicion{0%{opacity:1}50%{opacity:.2}100%{opacity:1}}@keyframes escribir{0%{width:0%}100%{width:100%}}@media (max-width:1280px){.satelite{display:none}body .flecha .flechaImg{width:200px}.flecha1{width:220px}.tierra{margin:50px}#objetivo .contenedor .papper{min-height:250px;min-width:250px;max-height:250px;;max-width:250px;}#objetivo .mFlechaDv{right:0;width:200px}#objetivo .mFlechaDv .flechaImg1{width:100%;right:0;transform:translateY(-400%) rotate(90deg)}#habilidades .contenedor .flecha .flechaImg2{width:190px}#contacto{width:92%;height:92%;margin-top:3.75%;margin-left:3.75%}}@media(min-width:700px){.contact-wrapper{display:grid;grid-template-columns:2fr 1fr}.contact-wrapper>*{padding:2em}}@media (max-width:1070px){header nav{display:grid;grid-template-columns:1ft 1ft;animation:transicion;animation-duration:1.5s;background-size:0 2px;padding-bottom:2px;backdrop-filter:blur(0)}header nav a button{margin:15px;margin-bottom:25px}header nav ul{margin-top:30px;width:100%}header nav ul li{display:block;text-align:center;width:100%;padding:30px;margin-top:7px;font-size:23px;background-color:rgba(200,200,200,.9);border-width:2px;border-style:solid;border-color:#fff;border-radius:50px;display:none}nav ul li a{font-size:28px;text-shadow:2px 2px 2px rgba(0,0,0,1)}header nav .navLinksMovile{display:block}header nav .btnMenu{width:70px;transition:all 0.5s ease 0s;transform:translateY(0);cursor:pointer}header nav .btnMenu:hover{transform:translateY(5px)}#inicio{margin:0;max-width:390px}#inicio .contenedor{flex-direction:column;margin-top:200px;margin-left:0;margin-right:0;text-align:center;justify-content:center;font-size:102px}.satelite{display:none}body .flecha .flechaImg{width:100px;right:70px}.flecha1{width:150px}.tierra{margin:0;animation-direction:alternate;animation-iteration-count:infinite}#objetivo{margin:0;padding:0}#objetivo .contenedor{display:none;margin:0;padding:0}.mFlechaDv{display:none;margin:0;padding:0}.ObjetivosMovil{display:flex;justify-content:center;align-items:center;flex-direction:column;width:100%}.ObjetivosMovil p{width:100%;border-radius:.25em;margin:7px;transform:translateX(100%);animation:trsX;animation-duration:2s;animation-timing-function:ease-in-out;animation-fill-mode:forwards}.ObjetivosMovil .p1{background-color:#1F618D;font-family:'Grape Nuts',cursive;font-weight:600;font-size:36px;text-align:center;animation-delay:1s}.ObjetivosMovil .p2{background-color:#2471A3;font-family:'Cutive Mono',monospace;font-weight:200;font-size:32px;text-align:center;animation-delay:2s}.ObjetivosMovil .p3{background-color:#2980B9;color:#000;font-family:'Beau Rivage',cursive;font-weight:300;font-size:36px;text-align:center;animation-delay:3s}.ObjetivosMovil .p4{background-color:#7FB3D5;font-family:'Oswald',sans-serif;font-weight:100;font-size:32px;text-align:center;animation-delay:4s}.ObjetivosMovil .p5{background-color:#5499C7;font-family:'Rubik Moonrocks',cursive;font-weight:100;font-size:32px;text-align:center;animation-delay:5s}.ObjetivosMovil .p6{background-color:#A9CCE3;font-weight:100;font-size:32px;text-align:center;animation-delay:6s}.flechaImg1Movil{transform:rotate(90deg);width:120px;animation:iluminar2;animation-duration:.7s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:ease-in-out;display:block}#contacto .contact-wrapper{padding-top:180px;border:0;box-shadow:0;box-shadow:3px 3px 15px rgba(0,0,0,0)}.contact-info{flex-direction:row}#habilidades{display:flex;justify-content:center}#habilidades .contenedor{margin-top:250px;display:grid;grid-template-columns:1fr 1fr}#habilidades .contenedor .proyecto{display:none}#habilidades .contenedor .lenguajes{width:50px;margin:5px;height:300px;margin:20px}#habilidades .contenedor .tecnologias{margin:5px;width:50px;height:260px;margin:20px}#habilidades .contenedor.proyectoMovil{display:flex;grid-columns:1/3;width:60px;border-radius:.25em;background-color:rgba(255,255,255,.1);backdrop-filter:blur(5px)}#habilidades .contenedor .lenguajes .lenguajesLogo,#habilidades .contenedor .tecnologias .tecnologiasLogo{width:60px;margin:15px}.proyectoMovil{grid-column:1/3;text-align:center}.proyectoMovil .projectImg{width:390px}#habilidades .contenedor .flecha{display:none}}
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cutive+Mono&family=Grape+Nuts&family=Montserrat+Alternates&family=Oswald&family=Rubik+Microbe&family=Rubik+Moonrocks&family=Rubik:wght@900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+.fondo{
+	position: fixed;
+	top: 0px;
+	bottom: -50%;
+	right: -50%;
+	left: -50%;
+
+
+	z-index: -1;
+	background-image: linear-gradient(120deg, #24252A 65%, rgba(0, 136, 169, .5) 35%);
+}
+
+
+header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	z-index: 10;
+}
+
+
+header li, header a, header button {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+
+
+header nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	padding-left: 10%;
+	padding-right: 10%;
+
+	animation: fadeTop,subR;
+	animation-duration: 1.5s;
+
+	backdrop-filter: blur(2px);
+
+	background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .4));
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0px 3px;
+
+	animation-fill-mode: forwards;
+
+	z-index: 5;
+}
+
+
+nav .navLinksMovile{
+	display: none;
+}
+
+header nav {
+	list-style: none;
+}
+
+
+header nav li{
+	display: inline-block;
+	margin-right: 32px;
+}
+
+header nav li a {
+	transition: all 0.3s ease 0s;
+}
+
+header nav li a:hover {
+	color: rgba(0, 136, 169, 0.8);
+}
+
+header nav a button{
+	cursor: pointer;
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border:  none;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+}
+
+header nav a button:hover{
+	background-color: rgba(0, 136, 169, 0.8);
+}
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+#inicio{
+	z-index: 2;
+
+	margin: 0px;
+	padding: 0px;
+
+	height: 700px;
+}
+
+
+#inicio .contenedor{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+	margin-top: 100px;
+
+
+	/*font-family: 'Rubik', sans-serif;*/
+	font-family: 'Rubik Moonrocks', cursive;
+	font-size: 152px;
+}
+
+
+#inicio .contenedor .animacion{
+	align-items: center;
+	justify-content: center;
+}
+
+
+.tierra{
+	max-width: 400px;
+	margin: 150px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+	animation: circulo;
+	animation-duration: 10s;
+	animation-direction: reverse;
+}
+
+
+.satelite{
+	background-color: rgba(0, 136, 169, 1);
+
+	width: 80px;
+	height: 80px;
+
+	border-radius: 50px;
+	position: relative;
+
+	animation: acercado;
+	animation-duration: 12s;
+	animation-fill-mode: forwards;
+
+}
+
+#inicio .contenedor .palabra1{
+	animation: fadeLeft;
+	animation-duration: 7s;
+}
+
+#inicio .contenedor .palabra2{
+	animation: fadeLeft;
+	animation-duration: 5s;
+}
+
+#inicio .contenedor .palabra3{
+	animation: fadeLeft;
+	animation-duration: 4s;
+}
+
+body .flecha{
+	position: fixed;
+
+	top: 0px;
+	left: 0px;
+
+	height: 100%;
+	width: 100%;
+}
+
+
+body .flecha .flechaImg{
+	position: absolute;
+	
+	right: 30px;
+	bottom:  0px;
+
+
+
+
+	filter: brightness(.9);
+
+	
+	animation: iluminar;
+	animation-delay: 8s;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate ;
+	animation-timing-function: ease-in-out;
+	
+	cursor: pointer;
+}
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-- Objetivo  --------------------------------------------------------------------------------------------*/
+#objetivo{
+	position: fixed;
+	display: flex;
+	
+	flex-direction: column;
+
+	
+	top: 200px;
+	left: 50px;
+
+	width: 90%;
+	height: 100%;
+
+	transform: translateX(200%);
+
+	display: flex;
+	align-items: center;
+}
+
+
+#objetivo .contenedor{
+	display: flex;
+	align-items: stretch;
+
+	height: 300px;
+	width: 100%;
+}
+
+#objetivo .contenedor .papper{
+	min-height: 300px;
+	min-width: 300px;
+	max-height: 300px;;
+	max-width: 300px;;
+	
+	border-radius: .25em;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+
+.pp1{
+	background-color: #1F618D   ;
+	font-family: 'Grape Nuts', cursive;
+	font-weight: 600;
+	font-size: 55px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 5;
+}
+
+.pp2{
+	background-color: #2471A3;
+	font-family: 'Cutive Mono', monospace;
+	font-weight: 200;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 4;
+
+	transform: translateY(-300px) rotate(90deg);
+}
+
+.pp3{
+	background-color: #2980B9;
+	color: black;
+	font-family: 'Beau Rivage', cursive;
+	font-weight: 300;
+	font-size: 36px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 3;
+
+	transform: translate(300px, 0px) rotateY(180deg);
+
+	visibility: hidden;
+}
+
+.pp4{
+	background-color: #5499C7;
+	font-family: 'Rubik Moonrocks', cursive;
+	font-weight: 100;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 2;
+
+	transform: translate(300px, 0px);
+
+	visibility: hidden;
+}
+
+.pp5{
+	background-color: #7FB3D5;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	z-index: 1;
+
+	transform: translateY(300px) rotate(90deg);
+
+	visibility: hidden;
+}
+
+.pp6{
+	background-color: #A9CCE3;
+
+
+	font-weight: 100;
+	font-size: 32px;
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+
+	transform: translateX(-300px) rotate(-90deg);
+
+	z-index: 0;
+
+
+	visibility: hidden;
+}
+
+
+
+#objetivo .mFlechaDv{
+	position: fixed;
+	right: 0px;
+	width: 250px;
+
+
+	animation: parpadeo;
+	animation-duration: .7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+
+	cursor: pointer;
+}
+
+#objetivo .mFlechaDv .flechaImg1{
+	transform: translateY(-200%) rotate(90deg);
+	cursor: pointer;
+}
+
+
+.ObjetivosMovil{display: none;}
+.flechaImg1Movil{display: none;}
+/*-- Objetivo  --------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-- Habilidades  -----------------------------------------------------------------------------------------*/
+
+#habilidades{
+	position: fixed;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	width: 90%;
+	height: 87%;
+
+	margin-top: 5%;
+	margin-left: 5%;
+
+
+	top: 0px;
+	left: 0px;
+	
+
+	transform: translate(200%, 200%);
+}
+
+#habilidades .contenedor{
+	position: absolute;
+	float: left;
+
+	align-items: center;
+
+	height: 100%;
+	width: 100%;
+
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+
+	text-shadow: 1px 1px 2px black;
+	text-align: center;
+	color: white;
+}
+
+#habilidades .contenedor .proyecto{
+	position: relative;
+	float: right;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+
+
+	height: 100%;
+	width: 35%;
+
+	margin: 0px 15px;
+	border-radius: .25em;
+
+	background-color: rgba(255, 255, 255, .3);
+	backdrop-filter: blur(2px);
+}
+
+#habilidades .contenedor .proyecto .flechaDl{
+	margin: 20px;
+}
+
+#habilidades .contenedor .proyecto .projectImg{
+	margin-top: 50px;
+	width: 85%;
+
+	box-shadow: 1px 1px 2px black;
+	border-radius: .25em;
+	cursor: pointer;
+}
+
+
+#habilidades .contenedor .proyecto .projectImg:hover{
+	width: 86%;
+}
+
+
+
+#habilidades .contenedor .lenguajes{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	margin: 0px 15px;
+	border-radius: .25em;
+
+	float: right;
+
+	height: 100%;
+	width: 20%;
+
+	background-color: rgba(255, 255, 255, .2);
+	backdrop-filter: blur(4px);
+
+	transform: translateX(500%);
+	transition: translate 2s;
+}
+
+#habilidades .contenedor .lenguajes .lenguajesLogo,
+#habilidades .contenedor .tecnologias .tecnologiasLogo{
+	width: 80px;
+	display: block;
+
+	margin: 30px;
+}
+
+#habilidades .contenedor .tecnologias{
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	margin: 0px 15px;
+	border-radius: .25em;
+
+	float: right;
+	height: 100%;
+	width: 20%;
+
+	background-color: rgba(255, 255, 255, .1);
+	backdrop-filter: blur(5px);
+
+	transform: translateX(500%);
+	transition: translate 2s;
+}
+
+#habilidades .contenedor .flecha{
+	position: fixed;
+
+	float: left;
+	width: 20%;
+}
+
+#habilidades .contenedor .flecha .flechaImg2{
+	position: relative;
+	transform: rotate(180deg);
+	top: 45%;
+
+	z-index: 5;
+
+	animation: iluminar3;
+	animation-delay: 0s;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate ;
+	animation-timing-function: ease-in-out;
+
+	cursor: pointer;
+}
+
+
+#habilidades .contenedor.proyectoMovil{
+	display: none;
+}
+
+
+.proyectoMovil{
+	display: none;
+}
+
+
+/*-- Habilidades  -----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*-- Contacto  --------------------------------------------------------------------------------------------*/
+#contacto{
+	position: fixed;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	width: 60%;
+	height: 87%;
+
+	margin-top: 5%;
+	margin-left: 20%;
+
+
+	top: 0px;
+	left: 0px;
+	
+	border-radius: .25em;
+
+	transform: translate(0%, 200%);
+
+
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-wrapper {
+	border-radius: .25em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 1);
+
+    border: solid 2px white;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    backdrop-filter: blur(5px);
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.contact-form form button {
+    background: rgba(0, 136, 169, 1);
+    border: 0;
+    border-radius: 50px;
+
+    width: 150px;
+    height: 50px;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: rgba(0, 136, 169, 0.8);
+    transition: background-color 1s ease-out;
+    outline: 0;
+
+    cursor: pointer;
+}
+
+.contact-info {
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.logo{
+	width: 50px;
+}
+
+.logo:hover{
+	width: 55px;
+}
+/*-- Contacto  --------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-- Animaciones -------------------------------------------------------------------------------------------*/
+
+@keyframes trsX{
+	100%{
+		transform: translateX(-5%);
+	}
+}
+
+
+
+
+
+@keyframes fadeTop{
+	0%{
+		transform: translateY(-100%);
+		opacity: .3;
+	}
+	100%{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes subR{
+	100%{
+		animation-delay: 5s;
+		background-size: 100% 2px;
+	}
+}
+
+@keyframes acercado{
+	100%{
+		transform: translate(-180px, -90px);
+	}
+}
+
+@keyframes circulo{
+	0%{
+		transform:rotate(0deg);
+	}
+	20%{
+		transform:rotate(120deg);
+	}
+	100%{
+		transform:rotate(240deg);
+	}
+}
+
+@keyframes fadeLeft{
+	0%{
+		transform: translateX(-150%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes iluminar{
+	0%{
+		filter: brightness(2);
+		transform: translateX(-30px);
+	}
+	100%{
+		filter: brightness(2);
+		transform: translateX(0px);
+	}
+}
+
+@keyframes iluminar2{
+	0%{
+		filter: brightness(2);
+		transform: translateY(0px) rotate(90deg);
+	}
+	100%{
+		filter: brightness(2);
+		transform: translateY(+30px) rotate(90deg);
+	}
+}
+
+@keyframes iluminar3{
+	0%{
+		filter: brightness(2);
+		transform: translateX(-30px) rotate(180deg);
+	}
+	100%{
+		filter: brightness(2);
+		transform: translateX(0px) rotate(180deg);
+	}
+}
+
+@keyframes transicion{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.2;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes escribir{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+/*-- Animaciones -------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+@media (max-width: 1280px){
+	.satelite{
+		display: none;
+	}
+
+	body .flecha .flechaImg{
+		width: 200px;
+	}
+
+
+	.flecha1{
+		width: 220px;
+	}
+
+	.tierra{
+		margin: 50px;
+	}
+
+
+	#objetivo .contenedor .papper{
+	min-height: 250px;
+	min-width: 250px;
+	max-height: 250px;;
+	max-width: 250px;;
+	
+	}
+
+	#objetivo .mFlechaDv{
+	right: 0px;
+	width: 200px;
+	}
+
+	
+	#objetivo .mFlechaDv .flechaImg1{
+		width: 100%;
+		right: 0px;
+		transform: translateY(-400%) rotate(90deg);
+
+	}
+	
+	#habilidades .contenedor .flecha .flechaImg2{
+		width: 190px;
+	}
+
+	#contacto{
+		width: 92%;
+		height: 92%;
+
+		margin-top: 3.75%;
+		margin-left: 3.75%;
+	}
+}
+
+
+
+
+
+
+@media(min-width: 700px) {
+ 
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 1070px){
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+	header nav{
+		display: grid;
+		grid-template-columns: 1ft 1ft;
+
+		animation: transicion;
+		animation-duration: 1.5s;
+
+		background-size: 0px 2px;
+
+		padding-bottom: 2px;
+		backdrop-filter: blur(0px);
+	}
+
+	header nav a button{
+		margin: 15px;
+		margin-bottom: 25px;
+	}
+
+
+	header nav ul{
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	header nav ul li{
+		display: block;
+		text-align: center;
+		width: 100%;
+		padding: 30px;
+		margin-top: 7px;
+
+		font-size: 23px;
+
+		background-color: rgba(200, 200, 200, .9);
+
+		border-width: 2px;
+		border-style: solid;
+		border-color: white;
+
+		border-radius: 50px;
+
+		display: none;
+
+
+	}
+
+	nav ul li a{
+		font-size: 28px;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1.0);
+	}
+
+	
+	header nav .navLinksMovile{
+		display: block;
+	}
+
+	header nav .btnMenu{
+		width: 70px;
+		transition: all 0.5s ease 0s;
+		transform: translateY(0px);
+
+		cursor: pointer;
+	}
+
+	header nav .btnMenu:hover{
+		transform: translateY(5px);
+	}
+/*-- Nav Bar ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+	#inicio{
+		margin: 0px;
+		max-width: 390px;
+	}
+
+	#inicio .contenedor{
+		flex-direction: column;
+		margin-top: 200px;
+		margin-left: 0px;
+		margin-right: 0px;
+		text-align: center;
+		justify-content: center;
+
+		font-size: 102px;
+	}
+
+	.satelite{
+		display: none;
+	}
+
+	body .flecha .flechaImg{
+		width: 100px;
+		right: 70px;
+	}
+
+
+	.flecha1{
+		width: 150px;
+	}
+
+	.tierra{
+		margin: 0px;
+
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+	}
+/*-- Inicio  ----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-- Objetivo  --------------------------------------------------------------------------------------------*/
+	#objetivo{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#objetivo .contenedor{
+		display: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.mFlechaDv{
+		display: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.ObjetivosMovil{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+
+	}
+
+	.ObjetivosMovil p{
+		width: 100%;
+		border-radius: .25em;
+		margin: 7px;
+
+
+		transform: translateX(100%);
+
+		animation: trsX;
+		animation-duration: 2s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	.ObjetivosMovil .p1{
+		background-color: #1F618D   ;
+		font-family: 'Grape Nuts', cursive;
+		font-weight: 600;
+		font-size: 36px;
+		text-align: center;
+		animation-delay: 1s;
+	}
+
+	.ObjetivosMovil .p2{
+		background-color: #2471A3;
+		font-family: 'Cutive Mono', monospace;
+		font-weight: 200;
+		font-size: 32px;
+		text-align: center;
+		animation-delay: 2s;
+	}
+
+	.ObjetivosMovil .p3{
+		background-color: #2980B9;
+		color: black;
+		font-family: 'Beau Rivage', cursive;
+		font-weight: 300;
+		font-size: 36px;
+		text-align: center;
+		animation-delay: 3s;
+	}
+
+	.ObjetivosMovil .p4{
+		background-color: #7FB3D5;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 100;
+		font-size: 32px;
+		text-align: center;
+		animation-delay: 4s;
+	}
+
+	.ObjetivosMovil .p5{
+		background-color: #5499C7;
+		font-family: 'Rubik Moonrocks', cursive;
+		font-weight: 100;
+		font-size: 32px;
+		text-align: center;
+		animation-delay: 5s;
+	}
+
+	.ObjetivosMovil .p6{
+		background-color: #A9CCE3;
+		font-weight: 100;
+		font-size: 32px;
+		text-align: center;
+		animation-delay: 6s;
+	}
+
+
+
+	.flechaImg1Movil{
+		transform: rotate(90deg);
+		width: 120px;
+
+		animation: iluminar2;
+		animation-duration: .7s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;
+
+		display: block;
+	}
+
+	#contacto .contact-wrapper{
+	padding-top: 180px ;
+
+	border: 0px;
+	box-shadow: 0px;
+
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0);
+	}
+
+	.contact-info{
+		flex-direction: row;
+	}
+
+
+
+	#habilidades{
+		display: flex;
+		justify-content: center;
+	}
+
+
+
+	#habilidades .contenedor{
+		margin-top: 250px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#habilidades .contenedor .proyecto{
+		display: none;
+	}
+
+	#habilidades .contenedor .lenguajes{
+		width: 50px;
+		margin: 5px;
+		height: 300px;
+
+		margin: 20px;
+	}
+
+
+
+
+	#habilidades .contenedor .tecnologias{
+		margin: 5px;
+		width: 50px;
+		height: 260px;
+
+		margin: 20px;
+	}
+
+	#habilidades .contenedor.proyectoMovil{
+		display: flex;
+
+		width: 60px;
+
+		border-radius: .25em;
+		background-color: rgba(255, 255, 255, .1);
+		backdrop-filter: blur(5px);
+	}
+
+
+	#habilidades .contenedor .lenguajes .lenguajesLogo,
+	#habilidades .contenedor .tecnologias .tecnologiasLogo{
+		width: 60px;
+
+
+		margin: 15px;
+	}
+
+	.proyectoMovil{
+		grid-column: 1/3;
+		text-align: center;
+	}
+
+	.proyectoMovil .projectImg{
+		width: 390px;
+	}
+
+
+	#habilidades .contenedor .flecha{
+		display: none;
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
