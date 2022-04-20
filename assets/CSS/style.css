@@ -112,6 +112,11 @@ header nav div img {
 	width: 35px;
 	cursor: pointer;
 	margin-left: 20px;
+	margin-bottom: 1px;
+}
+
+header nav div img:hover {
+	filter: brightness(1.2);
 }
 
 header nav .flagDiv{
