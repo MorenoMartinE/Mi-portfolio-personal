@@ -86,15 +86,16 @@ header nav li{
 	margin-right: 32px;
 }
 
-header nav li a {
+header nav li p {
 	transition: all 0.3s ease 0s;
+	cursor: pointer;
 }
 
-header nav li a:hover {
+header nav li p:hover {
 	color: rgba(0, 136, 169, 0.8);
 }
 
-header nav a button{
+header nav button{
 	cursor: pointer;
 	padding: 9px 25px;
 	margin-right: 45px;
@@ -740,12 +741,6 @@ body .flecha .flechaImg{
 
 
 
-
-
-
-
-
-
 /*-- Animaciones -------------------------------------------------------------------------------------------*/
 
 @keyframes trsX{
@@ -753,10 +748,6 @@ body .flecha .flechaImg{
 		transform: translateX(-5%);
 	}
 }
-
-
-
-
 
 @keyframes fadeTop{
 	0%{
@@ -996,9 +987,4 @@ body .flecha .flechaImg{
 	
 		cursor: pointer;
 	}
-
-
-
-
-
 }
