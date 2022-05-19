@@ -1,0 +1,24 @@
+.footer{
+    position:relative;
+    top: 50px;
+    width: 65%;
+    height: 46px;
+
+    left: 17.5%;
+    right: 17.5%;
+
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 1160px){
+    .footer{
+        position:relative;
+        top: 50px;
+        width: 90%;
+    
+    
+        left: 5%;
+        right: 5%;
+    }
+}

@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    transition: all 2s;
+
+    scroll-behavior: smooth;
+}
+
+
+h3 {
+    text-align: center;
+    color: rgba(225, 225, 225, .9);
+    text-shadow: 1px 1px 5px black;
+    font-size: 22px;
+}
+
+.responsive{
+    display: none;
+}
+
+.root {
+    width: 100%;
+}
+
+.glass{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 1px solid rgba(225, 225, 225, .1);
+
+    border-radius: .25em;
+}
+
+.glassDark{
+    background-color: rgba(0, 0, 0, 0.342);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 1px solid rgba(225, 225, 225, .1);
+
+    border-radius: .25em;
+}
+
+
+.spinner{
+    position: fixed;
+    
+    width: 100%;
+    height: 100%;
+
+    top: 0px;
+    left: 0px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+
+.background {
+    position: fixed;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+
+    transition: all 4s;
+}
+
+.background-dark{
+    position: fixed;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+
+    filter: brightness(40%) grayscale(40%);
+
+    transition: all 4s;
+}
+
+
+
+ @media (max-width: 1160px){
+
+    .responsive{
+        display: inline;
+    }
+
+}
