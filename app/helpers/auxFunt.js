@@ -9,11 +9,12 @@ export default function aux(){
     const $inicio = document.getElementById("Inicio");
     const $contacto = document.getElementById("Contacto");
     const $footer = document.getElementById("footer");
+    const $habilidades = document.getElementsByClassName("contHabilidad");
 
 
     setTimeout(() => {
         $root.removeChild(document.getElementById("spinner"));
-    }, 1000);
+    }, 2000);
 
   
     let act = 1;
@@ -61,6 +62,11 @@ export default function aux(){
             $footer.classList.add("glassDark");
             $footer.classList.remove("glass");
 
+            for(let i = 0; i < $habilidades.length; i++){
+                $habilidades[i].classList.add("glassDark");
+                $habilidades[i].classList.remove("glass");
+            }
+
         }else{
             $bg.classList.add("background");
             $bg.classList.remove("background-dark");
@@ -76,6 +82,11 @@ export default function aux(){
 
             $footer.classList.add("glass");
             $footer.classList.remove("glassDark");
+
+            for(let i = 0; i < $habilidades.length; i++){
+                $habilidades[i].classList.add("glass");
+                $habilidades[i].classList.remove("glassDark");
+            }
         }
     });
 

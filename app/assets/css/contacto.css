@@ -1,0 +1,30 @@
+.Contacto{
+    position:relative;
+    margin-top: 200px;
+    width: 65%;
+
+    left: 17.5%;
+    right: 17.5%;
+    
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1160px){
+    .Contacto {
+
+        position:relative;
+        width: 90%;
+        padding-top: 10px;
+    
+        left: 5%;
+        right: 5%;
+        
+        height: 500px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

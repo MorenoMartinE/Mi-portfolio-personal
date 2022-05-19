@@ -51,7 +51,7 @@ window.onhashchange = () =>{
     for(let i = 0; i < ELEMENTOS_MENU.length; i++){
         if(URLactual.hash === $el[i].hash){
             $el[i].classList.add("activo");
-            window.scroll(0, -110 + $st[i].offsetTop);
+            window.scroll(0, -118 + $st[i].offsetTop);
         }else{
             $el[i].classList.remove("activo");
         }
