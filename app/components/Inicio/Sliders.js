@@ -1,5 +1,8 @@
 import { getGeneric, getRepos } from "../../helpers/getData.js";
-const imgUrl = "https://repository-images.githubusercontent.com/479137070/27e582b1-6ff6-4687-bc79-b2c01514702f"
+const imgUrl = [
+    "https://repository-images.githubusercontent.com/485933542/b6016c64-1cf7-4b7f-9257-c92e1b20052c",
+    "https://repository-images.githubusercontent.com/479137070/27e582b1-6ff6-4687-bc79-b2c01514702f"
+]
 //  Realizar un scrapping web de las url a futuro
 
 
@@ -24,7 +27,7 @@ export default async function Slider(n){
     $titulo.setAttribute("target", "_blank");
     $imgTxt.classList.add("dscContainer");
     $imagen.classList.add("vistaPrevia");
-    $imagen.setAttribute("src", imgUrl);
+    $imagen.setAttribute("src", imgUrl[n]);
     $carga.classList.add("carga");
     $carga.setAttribute("id", "carga");
     
