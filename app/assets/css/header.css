@@ -38,7 +38,6 @@ header ul{
     cursor: pointer;
     color: rgb(88, 146, 255);
     transition: all .5s;
-    text-shadow: 1px solid rgba(225, 225, 225, .1);
 }
 
 
@@ -46,7 +45,6 @@ header ul{
 .link{
     text-decoration: none;
     color: rgba(225, 225, 225, .9);
-    text-shadow: 1px 1px 5px black;
 
     font-size: 22px;
     font-weight: 800;

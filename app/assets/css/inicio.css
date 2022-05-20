@@ -43,7 +43,7 @@
 p {
     margin: 15px 7px;
     color: rgba(225, 225, 225, .9);
-    text-shadow: 1px 1px 5px black;
+    
 
     text-align: center;
 
@@ -79,7 +79,7 @@ p {
 .prTitulo{
     margin-top: 25px;
     color: rgba(225, 225, 225, .9);
-    text-shadow: 1px 1px 5px black;
+    
 
     text-align: center;
 

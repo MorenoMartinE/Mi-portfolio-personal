@@ -20,13 +20,13 @@
 label{
     margin: 15px 7px;
     color: rgba(225, 225, 225, .9);
-    text-shadow: 1px 1px 5px black;
+    
     font-size: 25px;
     font-weight: 800;
 }
 
 .textInput{
-    width: 90%;
+    width: 60%;
 
     padding: .7em;
     border: none;
@@ -46,7 +46,7 @@ label{
 
 
 textarea{
-    width: 90%;
+    width: 60%;
     padding: .7em;
     border: none;
     background: none;
@@ -62,15 +62,16 @@ textarea{
 }
 
 #boton_form{
-    padding: .7em;
+    margin-top: 30px;
+    padding: 10px;
     
     background: none;
     border: none;
     font-size: 22px;
     
     color: rgba(225, 225, 225, .9);
-    text-shadow: 1px 1px 5px black;
 
+    font-weight: 800;
     cursor: pointer;
 }
 
@@ -90,7 +91,6 @@ textarea{
         
         height: 500px;
 
-        display: grid;
-        grid-template-columns: 1fr;
+
     }
 }

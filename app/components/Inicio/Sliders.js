@@ -1,6 +1,6 @@
 import { getGeneric, getRepos } from "../../helpers/getData.js";
 const imgUrl = [
-    "https://repository-images.githubusercontent.com/485933542/b6016c64-1cf7-4b7f-9257-c92e1b20052c",
+    "https://repository-images.githubusercontent.com/485933542/7a42a097-64f2-4338-9b9e-1c3cd2ee289b",
     "https://repository-images.githubusercontent.com/479137070/06e80da9-57e0-4312-81a5-afbc35777b57"
 ]
 //  Realizar un scrapping web de las url a futuro

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,13 +7,15 @@
     transition: all 2s;
 
     scroll-behavior: smooth;
+
+    font-family: 'Roboto', sans-serif;
+    color: rgba(225, 225, 225, .9);
 }
 
 
 h3 {
     text-align: center;
     color: rgba(225, 225, 225, .9);
-    text-shadow: 1px 1px 5px black;
     font-size: 22px;
 }
 
@@ -68,6 +72,8 @@ h3 {
     height: 100%;
 
     transition: all 4s;
+
+    filter: brightness(90%) grayscale(10%);
 }
 
 .background-dark{

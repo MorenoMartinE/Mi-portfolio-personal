@@ -41,6 +41,22 @@
     height: 50px;
 }
 
+@-moz-document url-prefix(){
+    .iconHabilidad{
+        position: relative;
+    }
+
+    .txtHabilidades{
+        position: relative;
+        top: -80px;
+    }
+
+    .progreso{
+        position: relative;
+        top: -68px;
+    }
+}
+
 @media (max-width: 1160px){
     .Habilidades {
 

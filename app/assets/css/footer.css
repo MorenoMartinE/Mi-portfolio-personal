@@ -1,24 +1,58 @@
 .footer{
     position:relative;
-    top: 50px;
     width: 65%;
-    height: 46px;
 
     left: 17.5%;
     right: 17.5%;
 
+    margin-top: 50px;
     margin-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconLink{
+    height: 30px;
+    width: 30px;
+
+    margin: 0px 25px;
+
+    opacity: .9;
+
+    cursor: pointer;
+
+    border-radius: .25em;
+}
+
+.iconLink:hover{
+    background-color: white;
 }
 
 
 @media (max-width: 1160px){
     .footer{
         position:relative;
-        top: 50px;
         width: 90%;
     
     
         left: 5%;
         right: 5%;
+
+        flex-direction: column;
+    }
+
+    .iconLink{
+        height: 30px;
+        width: 30px;
+    
+        margin: 15px 0px;
+    
+        opacity: .9;
+    
+        cursor: pointer;
+    
+        border-radius: .25em;
     }
 }
