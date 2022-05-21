@@ -32,9 +32,11 @@ export default async function App() {
 
 
     let auxbl = false;
-    while(document.readyState === 'complete' && auxbl === false){
-        aux();
-        auxbl = true;
-    }
+    setTimeout(()=> {
+        while(document.readyState === 'complete' && auxbl === false){
+            aux();
+            auxbl = true;
+        }
+    }, 2000);
 }
 
