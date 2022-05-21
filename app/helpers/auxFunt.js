@@ -15,7 +15,7 @@ export default function aux(){
 
     setTimeout(() => {
         $root.removeChild(document.getElementById("spinner"));
-    }, 2000);
+    }, 500);
 
   
     let act = 1;
