@@ -38,5 +38,6 @@ export default async function App() {
             auxbl = true;
         }
     }, 2000);
+        
 }
 
