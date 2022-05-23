@@ -1,9 +1,9 @@
 import { getGeneric, getRepos } from "../../helpers/getData.js";
-const imgUrl = [
-    "https://repository-images.githubusercontent.com/485933542/7a42a097-64f2-4338-9b9e-1c3cd2ee289b",
-    "https://repository-images.githubusercontent.com/479137070/06e80da9-57e0-4312-81a5-afbc35777b57"
-]
-//  Realizar un scrapping web de las url a futuro
+import { REPOS_IMG_URL } from "../../helpers/config.js";
+
+
+
+
 
 
 export default async function Slider(n){
@@ -27,7 +27,7 @@ export default async function Slider(n){
     $titulo.setAttribute("target", "_blank");
     $imgTxt.classList.add("dscContainer");
     $imagen.classList.add("vistaPrevia");
-    $imagen.setAttribute("src", imgUrl[n]);
+    $imagen.setAttribute("src", REPOS_IMG_URL[n]);
     $carga.classList.add("carga");
     $carga.setAttribute("id", "carga");
     
@@ -70,11 +70,6 @@ export default async function Slider(n){
         $lngsDisplay.appendChild($el);
     }
    
-    
-    
-
-
-
         let aux = props[n].name
         $titulo.innerHTML = aux.replace(/-/g, " ");
         $titulo.setAttribute("href", props[n].html_url);

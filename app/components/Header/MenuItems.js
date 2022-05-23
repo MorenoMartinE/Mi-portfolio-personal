@@ -1,23 +1,14 @@
 import SwitchBtn from "./SwitchBtn.js";
+import { DATOS_MENU } from "../../helpers/config.js";
 
-const ELEMENTOS_MENU = [
-    'Inicio', 
-    'Habilidades', 
-    'Contacto'
-];
 
-const VINCULOS_MENU = [
-    "#inicio",
-    "#habilidades",
-    "#contacto"
-]
 
 
 export default function MenuItems(){
     const $list = document.createElement("ul");
     const $liItems = new DocumentFragment();
 
-    for(let i = 0; i < ELEMENTOS_MENU.length; i++){
+    for(let i = 0; i < DATOS_MENU.ELEMENTOS_MENU.length; i++){
         let $item = document.createElement("li");
         let $hpr = document.createElement("a");
         $hpr.classList.add("link");
@@ -26,8 +17,8 @@ export default function MenuItems(){
             $hpr.classList.add("activo");
         }
 
-        $hpr.setAttribute("href", VINCULOS_MENU[i]);
-        $hpr.innerHTML = ELEMENTOS_MENU[i];
+        $hpr.setAttribute("href", DATOS_MENU.VINCULOS_MENU[i]);
+        $hpr.innerHTML = DATOS_MENU.ELEMENTOS_MENU[i];
         $item.appendChild($hpr);
         $liItems.appendChild($item);
     }
@@ -48,7 +39,7 @@ window.onhashchange = () =>{
 
     const URLactual = window.location;
 
-    for(let i = 0; i < ELEMENTOS_MENU.length; i++){
+    for(let i = 0; i < DATOS_MENU.ELEMENTOS_MENU.length; i++){
         if(URLactual.hash === $el[i].hash){
             $el[i].classList.add("activo");
             window.scroll(0, -118 + $st[i].offsetTop);

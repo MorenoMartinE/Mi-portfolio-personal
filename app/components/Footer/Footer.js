@@ -1,4 +1,7 @@
-const linkedinIcon = "../../app/assets/icons/linkedin.png"
+import { DATA_FOOTER } from "../../helpers/config.js";
+
+
+
 
 export default function Footer(){
     const $footer = document.createElement("footer");
@@ -10,11 +13,11 @@ export default function Footer(){
     const $linkedinIcon = document.createElement("img");
     const $gmail = document.createElement("p");
 
-    $linkedinUrl.setAttribute("href", "https://www.linkedin.com/in/martin-esteban-moreno/")
+    $linkedinUrl.setAttribute("href", DATA_FOOTER.linkedinUrl);
     $linkedinUrl.setAttribute("target", "_blank");
     $linkedinIcon.classList.add("iconLink");
-    $linkedinIcon.setAttribute("src", linkedinIcon);
-    $gmail.innerHTML = "morenomartinesteban96@gmail.com";
+    $linkedinIcon.setAttribute("src", DATA_FOOTER.linkedinIcon);
+    $gmail.innerHTML = DATA_FOOTER.email;
 
 
     $linkedinUrl.appendChild($linkedinIcon)

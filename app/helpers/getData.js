@@ -1,10 +1,9 @@
-const Urluser = "https://api.github.com/users/MorenoMartinE";
-const Urlrepos = "https://api.github.com/users/MorenoMartinE/repos";
+import { API_GITHUB_URLs } from "./config.js";
 
 
 export function getUser(){
 
-    return fetch(Urluser)
+    return fetch(API_GITHUB_URLs.urlUsr)
             .then((res) => res.ok ?
             res.json() :
             Promise.reject({
@@ -17,7 +16,7 @@ export function getUser(){
 }
 
 export function getRepos(){
-    return fetch(Urlrepos)
+    return fetch(API_GITHUB_URLs.urlRep)
         .then((res) => res.ok ?
         res.json() :
         Promise.reject({

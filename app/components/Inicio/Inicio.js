@@ -1,4 +1,5 @@
-import { getUser, getRepos } from "../../helpers/getData.js";
+import { getUser } from "../../helpers/getData.js";
+import { API_GITHUB_URLs } from "../../helpers/config.js";
 import Tarjeta from "./Tarjeta.js";
 import Slider from "./Sliders.js"
 let Usrdata = {};
@@ -17,7 +18,7 @@ export default async function Inicio(){
     $inicio.appendChild(Tarjeta(Usrdata));
 
     
-    $inicio.appendChild(await Slider(1));
+    $inicio.appendChild(await Slider(API_GITHUB_URLs.numReps));
 
     
 

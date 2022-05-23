@@ -1,4 +1,5 @@
 import Slider from "../components/Inicio/Sliders.js";
+import { API_GITHUB_URLs } from "./config.js";
 
 export default function aux(){
 
@@ -18,7 +19,7 @@ export default function aux(){
     }, 500);
 
   
-    let act = 1;
+    let act = 0;
     setInterval(async function(){
         let $actual = document.getElementById("sliderActual");
         let $inicio = document.getElementById("Inicio");
@@ -37,7 +38,7 @@ export default function aux(){
             }, 100);
         }, 500);
 
-        if(act >= 1){
+        if(act >= API_GITHUB_URLs.numReps){
             act = 0;
         }else{
             act++;
