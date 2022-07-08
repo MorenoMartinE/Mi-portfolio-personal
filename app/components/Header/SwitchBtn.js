@@ -24,7 +24,7 @@ export default function SwitchBtn(){
 
     const $span04 = document.createElement("span");
     $span04.classList.add("switch__left");
-    $span04.innerHTML = "Ligt";
+    $span04.innerHTML = "Light";
 
     const $span05 = document.createElement("span");
     $span05.classList.add("switch__right");

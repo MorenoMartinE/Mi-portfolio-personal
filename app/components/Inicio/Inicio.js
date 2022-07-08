@@ -1,5 +1,5 @@
 import getData from "../../helpers/getData.js";
-import { API_GITHUB_URLs } from "../../helpers/config.js";
+import { API_GITHUB_URLs } from "../../configs/apiConfig.js";
 import Tarjeta from "./Tarjeta.js";
 import Slider from "./Sliders.js"
 

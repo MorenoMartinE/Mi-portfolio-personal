@@ -1,4 +1,4 @@
-import { DATA_HABILIDADES } from "../../helpers/config.js";
+import { DATA_HABILIDADES } from "../../configs/skillConfig.js";
 
 
 export default function LoadContainers(){

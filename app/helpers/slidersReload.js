@@ -1,6 +1,5 @@
 import Slider from "../components/Inicio/Sliders.js";
-import { API_GITHUB_URLs } from "./config.js";
-
+import { API_GITHUB_URLs } from "../configs/apiConfig.js";
 export default function spinnerReload(){
     const $root = document.getElementById("root");
 

@@ -1,5 +1,5 @@
 import SwitchBtn from "./SwitchBtn.js";
-import { DATOS_MENU } from "../../helpers/config.js";
+import { DATOS_MENU } from "../../configs/menuConfig.js";
 
 
 

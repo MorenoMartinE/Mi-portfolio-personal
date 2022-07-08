@@ -1,4 +1,4 @@
-import { DATA_FOOTER } from "../../helpers/config.js";
+import { DATA_FOOTER } from "../../configs/footerConfig.js"; 
 
 
 

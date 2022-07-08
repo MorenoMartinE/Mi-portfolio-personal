@@ -1,6 +1,6 @@
 import getData from "../../helpers/getData.js";
-import { API_GITHUB_URLs } from "../../helpers/config.js";
-import { REPOS_IMG_URL } from "../../helpers/config.js";
+import { API_GITHUB_URLs } from "../../configs/apiConfig.js";
+import { REPOS_IMG_URL } from "../../configs/apiConfig.js";
 
 
 
