@@ -1,5 +1,4 @@
 import MenuItems from "./MenuItems.js";
-import SwitchBtn from "./SwitchBtn.js";
 
 
 

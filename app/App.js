@@ -6,12 +6,14 @@ import Inicio from "./components/Inicio/Inicio.js";
 import Habilidades from "./components/Habilidades/Habilidades.js";
 import Contacto from "./components/Contacto/Contacto.js";
 import Footer from "./components/Footer/Footer.js";
-import aux from "./helpers/auxFunt.js";
+
+import spinnerReload from "./helpers/slidersReload.js";
+import darkModeOn from "./helpers/darkModeOn.js";
+import formFunction from "./helpers/formFunction.js";
 
 
 export default async function App() {
-    const d = document;
-    const $root = d.getElementById("root");
+    const $root = document.getElementById("root");
     
     
     
@@ -23,21 +25,21 @@ export default async function App() {
     $root.appendChild(await Inicio());
     $root.appendChild(Habilidades());
     $root.appendChild(Contacto());
+    
     $root.appendChild(Footer());
 
     
     $root.appendChild(Spinner());
 
 
-
-
     let auxbl = false;
     setTimeout(()=> {
         while(document.readyState === 'complete' && auxbl === false){
-            aux();
+            spinnerReload();
+            darkModeOn();
+            formFunction();
             auxbl = true;
         }
     }, 2000);
-        
 }
 

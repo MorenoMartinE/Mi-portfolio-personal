@@ -1,4 +1,5 @@
-import { getGeneric, getRepos } from "../../helpers/getData.js";
+import getData from "../../helpers/getData.js";
+import { API_GITHUB_URLs } from "../../helpers/config.js";
 import { REPOS_IMG_URL } from "../../helpers/config.js";
 
 
@@ -8,7 +9,7 @@ import { REPOS_IMG_URL } from "../../helpers/config.js";
 
 export default async function Slider(n){
 
-    const props = await getRepos();
+    const props = await getData(API_GITHUB_URLs.urlRep);
 
     
     const $sliderContainer = document.createElement("div");
@@ -36,7 +37,7 @@ export default async function Slider(n){
     
     $lngsDisplay.classList.add("flPrc0");
 
-    let lngs = await getGeneric(props[n].languages_url);
+    let lngs = await getData(props[n].languages_url);
     let lngsKeys = Object.keys(lngs);
     let arrLngs = Object.values(lngs);
     let totalLngs = 0;
