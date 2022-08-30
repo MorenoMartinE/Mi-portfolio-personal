@@ -11,35 +11,31 @@ import spinnerReload from "./helpers/slidersReload.js";
 import darkModeOn from "./helpers/darkModeOn.js";
 import formFunction from "./helpers/formFunction.js";
 
+    
 
 export default async function App() {
     const $root = document.getElementById("root");
-    
-    
     
     $root.appendChild(Bg());
 
     $root.appendChild(BurguerBtn());
     $root.appendChild(Header());
-
     $root.appendChild(await Inicio());
     $root.appendChild(Habilidades());
     $root.appendChild(Contacto());
-    
     $root.appendChild(Footer());
 
-    
     $root.appendChild(Spinner());
 
 
-    let auxbl = false;
     setTimeout(()=> {
-        while(document.readyState === 'complete' && auxbl === false){
             spinnerReload();
             darkModeOn();
             formFunction();
-            auxbl = true;
-        }
     }, 2000);
+
+    setTimeout(() => {
+        $root.removeChild(document.getElementById("spinner"));
+    }, 2500);
 }
 

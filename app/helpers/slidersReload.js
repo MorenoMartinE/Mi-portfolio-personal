@@ -1,13 +1,8 @@
 import Slider from "../components/Inicio/Sliders.js";
 import { API_GITHUB_URLs } from "../configs/apiConfig.js";
-export default function spinnerReload(){
-    const $root = document.getElementById("root");
 
-    setTimeout(() => {
-        $root.removeChild(document.getElementById("spinner"));
-    }, 500);
-    
-    
+
+export default function spinnerReload(){
     let act = 0;
     setInterval(async function(){
         let $actual = document.getElementById("sliderActual");

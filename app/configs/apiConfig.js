@@ -5,7 +5,7 @@
  * publica, deberas dirigirte al archivo "Sliders.js" dentro del componente "Inicio" y modificar el ciclo for dentro de la funcion
  * "export default async function Slider(n)" para que esa repo sea ignorada, asi mismo tendras que dejar un espacio en blanco dentro de 
  * REPOS_IMG_URL que coincida con la repo que deseas que sea ignorada.
- */
+ **/
 
 
 export const API_GITHUB_URLs = {
