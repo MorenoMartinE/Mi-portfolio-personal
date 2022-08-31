@@ -50,7 +50,7 @@ export default async function Slider(n){
 
         $el.classList.add("flPrc")
         $bl.classList.add("gl");
-        $bl.classList.add(lngsKeys[i]);
+        $bl.classList.add(lngsKeys[i].replace(/\s+/g, ''));
         $bltxt.classList.add("codeTxt");
 
         for(let x = 0; x < arrLngs.length; x++){

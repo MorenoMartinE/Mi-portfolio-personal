@@ -11,16 +11,17 @@
 export const API_GITHUB_URLs = {
     urlUsr : "https://api.github.com/users/MorenoMartinE",
     urlRep : "https://api.github.com/users/MorenoMartinE/repos",
-    numReps : 4,
+    numReps : 5,
 }
 
 
 export const REPOS_IMG_URL = [
-    
+   
     "https://repository-images.githubusercontent.com/485933542/7a42a097-64f2-4338-9b9e-1c3cd2ee289b",
     "https://repository-images.githubusercontent.com/485933542/7a42a097-64f2-4338-9b9e-1c3cd2ee289b",
     "",
     "https://repository-images.githubusercontent.com/479137070/06e80da9-57e0-4312-81a5-afbc35777b57",
-    "https://repository-images.githubusercontent.com/510566718/89cf833e-9a6d-49a9-ae97-0878689e8210"
+    "https://repository-images.githubusercontent.com/531011037/76fbf90b-9918-4d7c-ba72-e54e2b5aae10",
+    "https://repository-images.githubusercontent.com/510566718/89cf833e-9a6d-49a9-ae97-0878689e8210",
     
 ]
