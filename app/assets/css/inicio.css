@@ -71,6 +71,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .prTitulo{
@@ -86,6 +87,9 @@ p {
     filter: brightness(98%);
 
     text-decoration: none;
+
+    position: absolute;
+    top: 15px;
 }
 
 .prTitulo:hover{

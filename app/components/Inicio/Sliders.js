@@ -1,10 +1,5 @@
 import getData from "../../helpers/getData.js";
 import { API_GITHUB_URLs } from "../../configs/apiConfig.js";
-import { REPOS_IMG_URL } from "../../configs/apiConfig.js";
-
-
-
-
 
 
 export default async function Slider(n){
@@ -15,7 +10,6 @@ export default async function Slider(n){
     const $sliderContainer = document.createElement("div");
     const $titulo = document.createElement("a");
     const $imgTxt = document.createElement("div");
-    const $imagen = document.createElement("img");
     const $text = document.createElement("p");
     const $lngsDisplay = document.createElement("div");
     const $carga = document.createElement("div");
@@ -27,8 +21,6 @@ export default async function Slider(n){
     $titulo.classList.add("prTitulo");
     $titulo.setAttribute("target", "_blank");
     $imgTxt.classList.add("dscContainer");
-    $imagen.classList.add("vistaPrevia");
-    $imagen.setAttribute("src", REPOS_IMG_URL[n]);
     $carga.classList.add("carga");
     $carga.setAttribute("id", "carga");
     
@@ -78,7 +70,6 @@ export default async function Slider(n){
     
 
     $sliderContainer.appendChild($titulo);
-    $imgTxt.appendChild($imagen);
     $imgTxt.appendChild($text);
     $sliderContainer.appendChild($imgTxt);
     $sliderContainer.appendChild($lngsDisplay);
